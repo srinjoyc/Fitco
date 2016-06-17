@@ -1,0 +1,2 @@
+class SubcribedUser < User
+end
