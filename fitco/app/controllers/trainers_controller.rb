@@ -1,6 +1,14 @@
+require 'json'
 class TrainersController < ApplicationController
+
+
   def index
     @trainers = Trainer.all
+ 
+    respond_to do |format|
+      format.html
+      format.json{ render :json=> @trainers.to_json }
+    end
   end
 
   def show
@@ -14,19 +22,28 @@ class TrainersController < ApplicationController
   def create
       firstname = params[:firstname]
       lastname = params[:lastname]
-      gender = params[:gendre]
+      gender = params[:gender]
       description = params[:description]
-      emai = params[:email]
+      email = params[:email]
       phone = params[:phone]
       url = params[:url]
       results = {result: false}
 
-    @trainer = Trainer.new(firstname: firstname, lastname: lastname, gender: gendre, description: description, emai: email, phone: phone, url: url)
+    @trainer = Trainer.new(firstname: firstname, lastname: lastname, gender: gender, description: description, email: email, phone: phone, url: url)
 
     if @trainer.save
       results[:result] = true
-      results[:id] = trainer.ic
+      results[:id] = trainer.id
     end
     results.to_json
+  end
+
+  def search
+    puts @trainer = Trainer.where(firstname: params[:txt])
+
+     respond_to do |format|
+      format.html
+      format.json{ render :json => @trainer.to_json }
+    end
   end
 end
