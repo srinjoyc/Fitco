@@ -5957,3 +5957,143 @@ Processing by VideosController#show as JS
   Parameters: {"id"=>"videos"}
   Rendered videos/index.html.erb (0.3ms)
 Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:49:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 256ms (Views: 243.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 21:49:30 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 1136ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( video.js )` to `config/initializers/assets.rb` and restart your server):
+    2:   <head>
+    3:     <title>Video Chat</title>
+    4:     <link rel="stylesheet" href="https://media.twiliocdn.com/sdk/quickstart/conversations-quickstart.min.css">
+    5:     <%= javascript_include_tag 'video'%>
+    6:   </head>
+    7:   <body>
+    8:   <div id="remote-media"></div>
+  app/views/videos/index.html.erb:5:in `_app_views_videos_index_html_erb___3624875296332181218_69941146115080'
+  app/controllers/videos_controller.rb:24:in `index'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.5ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 21:49:32 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( video.js )` to `config/initializers/assets.rb` and restart your server):
+    2:   <head>
+    3:     <title>Video Chat</title>
+    4:     <link rel="stylesheet" href="https://media.twiliocdn.com/sdk/quickstart/conversations-quickstart.min.css">
+    5:     <%= javascript_include_tag 'video'%>
+    6:   </head>
+    7:   <body>
+    8:   <div id="remote-media"></div>
+  app/views/videos/index.html.erb:5:in `_app_views_videos_index_html_erb___3624875296332181218_69941146115080'
+  app/controllers/videos_controller.rb:35:in `show'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 21:49:32 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( video.js )` to `config/initializers/assets.rb` and restart your server):
+    2:   <head>
+    3:     <title>Video Chat</title>
+    4:     <link rel="stylesheet" href="https://media.twiliocdn.com/sdk/quickstart/conversations-quickstart.min.css">
+    5:     <%= javascript_include_tag 'video'%>
+    6:   </head>
+    7:   <body>
+    8:   <div id="remote-media"></div>
+  app/views/videos/index.html.erb:5:in `_app_views_videos_index_html_erb___3624875296332181218_69941146115080'
+  app/controllers/videos_controller.rb:35:in `show'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:53:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 315ms (Views: 307.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 21:53:51 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 261ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 21:53:51 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (2.2ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 21:53:57 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 21:53:57 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.9ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
