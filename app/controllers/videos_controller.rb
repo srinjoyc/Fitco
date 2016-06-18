@@ -26,9 +26,7 @@ class VideosController < ApplicationController
 
 	def show
 		# Good idea for later: @appt = Appointments.find(params[:id])
-
 		@appt = {id:5}	# bullshit dummy code, to get around lack of suitable AR/DB class
-
 		@video_session = @@sessions[@appt[:id]]			# violates REST (real REST and rails REST)
 		if !@video_session
 			@video_session = @@sessions[@appt[:id]] = VideoSession.new()

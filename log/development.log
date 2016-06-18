@@ -5744,3 +5744,216 @@ Processing by VideosController#show as JS
   Parameters: {"id"=>"videos"}
   Rendered videos/index.html.erb (0.6ms)
 Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 20:04:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 247ms (Views: 238.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/video.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/videos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/video.self-84a291b7529736da984817bedbdb96b9f5da55be7cd7d99c28030a1f24dbed55.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/videos.self-af63f2f544322e1d6f41f2444ed4e5833428905ca1f7845f59863c7086f137a5.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-17 20:04:28 -0700
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 20:04:33 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 291ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos.js" for 127.0.0.1 at 2016-06-17 20:04:33 -0700
+Processing by VideosController#index as JS
+  Rendered videos/index.html.erb (1.7ms)
+Completed 200 OK in 184ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 20:04:39 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 301ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 20:04:39 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 179ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos.js" for 127.0.0.1 at 2016-06-17 20:04:40 -0700
+Processing by VideosController#index as JS
+  Rendered videos/index.html.erb (0.7ms)
+Completed 200 OK in 176ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:04:44 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 178ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:04:45 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:04:50 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:04:51 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:05:17 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:05:17 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:05:18 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:05:19 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:05:20 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:05:20 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 20:05:32 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 222ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos.js" for 127.0.0.1 at 2016-06-17 20:05:33 -0700
+Processing by VideosController#index as JS
+  Rendered videos/index.html.erb (0.8ms)
+Completed 200 OK in 936ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 20:05:34 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 20:05:34 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 20:06:12 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 234ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos.js" for 127.0.0.1 at 2016-06-17 20:06:12 -0700
+Processing by VideosController#index as JS
+  Rendered videos/index.html.erb (0.3ms)
+Completed 200 OK in 221ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 127.0.0.1 at 2016-06-17 20:06:12 -0700
+Processing by VideosController#index as HTML
+  Rendered videos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 273ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos.js" for 127.0.0.1 at 2016-06-17 20:06:13 -0700
+Processing by VideosController#index as JS
+  Rendered videos/index.html.erb (0.7ms)
+Completed 200 OK in 939ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:06:14 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:06:15 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.6ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-17 20:06:18 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/videos.js" for 127.0.0.1 at 2016-06-17 20:06:18 -0700
+Processing by VideosController#show as JS
+  Parameters: {"id"=>"videos"}
+  Rendered videos/index.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
