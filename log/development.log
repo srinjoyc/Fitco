@@ -6097,3 +6097,10 @@ Processing by VideosController#show as JS
   Parameters: {"id"=>"videos"}
   Rendered videos/index.html.erb (0.9ms)
 Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-17 21:58:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 4028ms (Views: 4020.3ms | ActiveRecord: 0.0ms)
