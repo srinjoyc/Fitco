@@ -1,23 +1,31 @@
-require 'twilio-ruby'
-require 'dotenv'
-require 'faker'
-require 'json'
+require 'opentok'
+
+raise "You must define API_KEY and API_SECRET environment variables" unless ENV.has_key?("API_KEY") && ENV.has_key?("API_SECRET")
 
 class Videos < ActiveRecord::Base
 
 	class << self 
-		def getToken
-			identity = Faker::Internet.user_name
-		  # Create an Access Token for Video usage
-		  token = Twilio::Util::AccessToken.new ENV['TWILIO_ACCOUNT_SID'],
-		  ENV['TWILIO_API_KEY'], ENV['TWILIO_API_SECRET'], 3600, identity
-		  # Grant access to Conversations
-		  grant = Twilio::Util::AccessToken::ConversationsGrant.new
-		  grant.configuration_profile_sid = ENV['TWILIO_CONFIGURATION_SID']
-		  token.add_grant grant
-		  # Generate the token and send to client
-		  json = { :identity => identity, :token => token.to_jwt }.to_json
+
+		def getAPIKey
+			@key = ENV['API_KEY']
 		end 
+
+		def getAPISecret
+			@opentok = OpenTok::OpenTok.new(ENV['API_KEY'], ENV['API_SECRET'])
+		end 
+
+		def getSession	
+			opentok = OpenTok::OpenTok.new(ENV['API_KEY'], ENV['API_SECRET'])
+			session = opentok.create_session
+			session_id = session.session_id
+		end
+
+		def getToken	
+			opentok = OpenTok::OpenTok.new(ENV['API_KEY'], ENV['API_SECRET']) 
+      session = opentok.create_session
+      token = opentok.generate_token session
+		end
+
 	end 
 
-end
+end 
