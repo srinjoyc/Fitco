@@ -1,49 +1,28 @@
-<script src="https://static.opentok.com/v2.6/js/opentok.min.js"></script>
-<script type="text/javascript">
-  var apiKey = '<%= @video_session.api_key %>';
-  var sessionId = '<%= @video_session.session_id %>';
-  var token = '<%= @video_session.token %>';
-  console.log(token)
-</script>
-<script>
-// Initialize an OpenTok Session object
-var session = TB.initSession(sessionId);
-
-// Initialize a Publisher, and place it into the element with id="publisher"
-var publisher = TB.initPublisher(apiKey, 'publisher');
-
-// Attach event handlers
-session.on({
-
-  // This function runs when session.connect() asynchronously completes
-  sessionConnected: function(event) {
-    // Publish the publisher we initialzed earlier (this will trigger 'streamCreated' on other
-    // clients)
-    session.publish(publisher);
-  },
-
-  // This function runs when another client publishes a stream (eg. session.publish())
-  streamCreated: function(event) {
-    // Create a container for a new Subscriber, assign it an id using the streamId, put it inside
-    // the element with id="subscribers"
-    var subContainer = document.createElement('div');
-    subContainer.id = 'stream-' + event.stream.streamId;
-    document.getElementById('subscribers').appendChild(subContainer);
-
-    // Subscribe to the stream that caused this event, put it inside the container we just made
-    session.subscribe(event.stream, subContainer);
-  }
-
-});
-
-// Connect to the Session using the 'apiKey' of the application and a 'token' for permission
-session.connect(apiKey, token);
-
-</script>
-<script src="videos.js"></script>
-
-<h2>Hello, World!</h2>
-
-<div id="publisher"></div>
-
-<div id="subscribers"></div>
+<html>
+  <head>
+    <title>Video Chat</title>
+    <link rel="stylesheet" href="https://media.twiliocdn.com/sdk/quickstart/conversations-quickstart.min.css">
+    <%= javascript_include_tag 'video'%>
+  </head>
+  <body>
+  <div id="remote-media"></div>
+  <div id="controls">
+    <div id="preview">
+      <p class="instructions">Lookin' good!</p>
+      <div id="local-media"></div>
+      <button id="button-preview">Preview My Camera</button>
+    </div>
+    <div id="invite-controls">
+      <p class="instructions">Invite another Client</p>
+      <input id="invite-to" type="text" placeholder="Identity to invite" />
+      <button id="button-invite">Send Invite</button>
+    </div>
+    <div id="log">
+      <p>&gt;&nbsp;<span id="log-content">Preparing to listen</span>...</p>
+    </div>
+  </div><!-- /controls -->
+  <script src="https://media.twiliocdn.com/sdk/js/common/v0.1/twilio-common.min.js"></script>
+  <script src="https://media.twiliocdn.com/sdk/js/conversations/v0.13/twilio-conversations.min.js"></script>
+  <script src="quickstart.js"></script>
+  </body>
+</html>

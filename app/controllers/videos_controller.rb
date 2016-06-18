@@ -34,4 +34,5 @@ class VideosController < ApplicationController
 
 		render :index ## temporary foolishness
 	end
+
 end
