@@ -7,21 +7,7 @@ class VideosController < ApplicationController
 	@@sessions = {}
 
 	def index
-		# Jeremy says we don't want any routes other than /videos/:id
-		@video_session = VideoSession.new()
-
-		# @api_key = Videos.getAPIKey()
-  #   @session_id = Videos.getSession()
-  #   @token = Videos.getToken();
-  # 	puts "unsliced token: #{@token}"
-
-    # @locals = {
-    #   :api_key => api_key,
-    #   :session_id => session_id,
-    #   :token => token
-    # }
-
-    render :index
+		
 	end
 
 	def show
@@ -34,5 +20,9 @@ class VideosController < ApplicationController
 
 		render :index ## temporary foolishness
 	end
+
+	def create
+
+	end 
 
 end
