@@ -1,0 +1,44 @@
+<script src="jquery.js"></script>
+<h1>Hey<!--  <%= @user.firstname %> -->!</h1>
+Welcome! Were looking forward to helping you get back on track
+
+<%= @user.firstname %>!<br/>
+
+<button id="userprofile">User Profile</button> 
+<div id="trainerinterface">Trainer Interface</div>
+<div id ="subuser"> Tell us a bit more about yourself so we can help you reach your goals </div>
+<div id="usermetrics"> Check your progress </div>
+<div id="workouts"> Workouts </div>
+
+
+<script>
+
+$(function() {
+    console.log( "ready!" );
+  $("#workoutsshow").hide();
+  $("#userprofilecontent").hide();
+  $("#usermetricsshow").hide();
+  $("#trainerinterfaceshow").hide();
+    console.log("brap")
+  });
+$(function() {
+  $("#usermetrics").on('click', function(){
+    event.preventDefault();
+    $("#usermetricsshow").show();
+    console.log("derp")
+  });
+});
+// $(function(){
+//   $('#subuser').on('click', function(){
+//     event.preventDefault();
+//     
+//   })
+// })
+// $(function() {
+//   $("#userprofile").on('click', function(){
+//     $("#userprofilecontent").show('slow');
+//     console.log("derp")
+//   });
+
+
+</script>
