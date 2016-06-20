@@ -17,6 +17,11 @@ class TrainersController < ApplicationController
 
   def new
     @trainer = Trainer.new
+
+    respond_to do |format|
+      format.html
+      format.json{ render :json=> @trainer.to_json }
+    end
   end
 
   def create
@@ -26,16 +31,19 @@ class TrainersController < ApplicationController
       description = params[:description]
       email = params[:email]
       phone = params[:phone]
-      url = params[:url]
-      results = {result: false}
+      result = {success: false}
 
-    @trainer = Trainer.new(firstname: firstname, lastname: lastname, gender: gender, description: description, email: email, phone: phone, url: url)
+    @trainer = Trainer.new(firstname: firstname, lastname: lastname, gender: gender, description: description, email: email, phone: phone)
 
     if @trainer.save
-      results[:result] = true
-      results[:id] = trainer.id
+      result[:success] = true
+      result[:id] = @trainer.id
     end
-    results.to_json
+
+    respond_to do |format|
+      format.html
+      format.json{ render :json=> result.to_json }
+    end
   end
 
   def search
@@ -46,4 +54,5 @@ class TrainersController < ApplicationController
       format.json{ render :json => @trainer.to_json }
     end
   end
+
 end
