@@ -5,10 +5,10 @@ class TrainersController < ApplicationController
   def index
     @trainers = Trainer.all
  
-    respond_to do |format|
-      format.html
-      format.json{ render :json=> @trainers.to_json }
-    end
+    # respond_to do |format|
+    #   format.html
+    #   format.json{ render :json=> @trainers.to_json }
+    # end
   end
 
   def show

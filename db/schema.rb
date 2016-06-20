@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(version: 20160619093936) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "trainers", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "gender"
+    t.text     "description"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "url"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "firstname"
     t.string   "lastname"

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :trainers
   resources :appointments
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
@@ -8,11 +9,8 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions, only: [:create, :destroy]
-  root 'users#index'
   resources :videos
-
   resources :trainers
-
 
   get '/trainers/search/:txt' => 'trainers#search'
   # The priority is based upon order of creation: first created -> highest priority.

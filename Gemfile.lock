@@ -86,8 +86,6 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
-<<<<<<< HEAD:fitco/Gemfile.lock
-=======
     oauth2 (1.1.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0, < 1.5.2)
@@ -106,7 +104,6 @@ GEM
       activesupport (>= 2.0)
       addressable (~> 2.3)
       httparty (~> 0.13.1)
->>>>>>> 769a9c259179e2be3090649bb498f6f4cfd044cd:Gemfile.lock
     pg (0.18.4)
     pkg-config (1.1.7)
     rack (1.6.4)
