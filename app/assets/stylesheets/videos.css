@@ -1,0 +1,37 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+
+.row {
+	height: 400px;
+}
+
+.col-sm-4 {
+	height: inherit;
+	padding: 0px;
+}
+
+.col-sm-8 {
+	height: inherit;
+	border: 2px solid black;
+}
+
+#publisher{
+	height: inherit;
+	width: inherit;
+}
+
+#subscribers{
+	height: inherit;
+	width: 100%;
+}
+
+#left1{
+	border: 2px solid green;
+}
+#right1{
+	border: 2px solid green;
+}
