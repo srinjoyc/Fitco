@@ -6,7 +6,7 @@ $(function() {
 
     $.ajax({
       method: 'GET',
-      dataType: 'video',
+      dataType: 'json',
       url: 'videos/index',
       success: function(data){
         handlers.showWorkout(data);
@@ -53,7 +53,7 @@ $(function() {
     });
   },
   postForm: function(users){
-    
+
   }
 };
   // postForm: function(users){

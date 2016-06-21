@@ -3,13 +3,12 @@ class UsersController < ApplicationController
   def index
   end
 
- def new
+  def new
   @user = User.new
- end
+  end
 
   def create
     @user = User.new(user_params)
-      
       if @user.save
         session[:user_id] = @user.id
         render '/users/show' , notice: "welcome aboard, #{@user.firstname}"
@@ -27,8 +26,9 @@ class UsersController < ApplicationController
 
     if @user.update_attributes(user_params)
         @user.save
-      redirect_to '/users/show'
-    else
+        redirect_to :action=>'show', :id=>@user.id
+      #redirect_to '/users/'+ '#{params[:id]}'
+    else 
       render :edit
     end
   end
@@ -44,6 +44,7 @@ class UsersController < ApplicationController
 private
 
   def user_params
-    params.require(:user).permit(:email, :firstname, :lastname, :password, :password_confirmation, :age, :height, :weight, :workoutgoals, :workouthistory)
-end
+    params.require(:user).permit(:email, :firstname, :lastname, :password, :password_confirmation, :age, :height, :weight, :workoutgoals, :workouthistory, :idealweight, :image_url)
+  end
+
 end

@@ -1,13 +1,15 @@
 <script src="jquery.js"></script>
-<h1>Hey <%= @user.firstname %>!</h1>
-Welcome! Were looking forward to helping you get back on track
-
-
-<button id="userprofile">User Profile</button> 
+<h1>Hey <strong><%= @user.firstname %>!</strong> Welcome Back!</h1>
+<h3> We're looking forward to helping you get on track</h3>
+<h3>Current Weight:<strong> <%= @user.weight %> </strong> Current Workout Goals: <%= @user.workoutgoals %></h3>
+<h3>Target Weight: <strong><%= @user.idealweight %></strong> </h3>  <h5>You're getting there! <%= @user.weight - @user.idealweight %> Pounds to go. Keep it up</h5>
+<img src="<%= @user.image_url %>">
+<button id="userprofile">User Profile</button> </br>
 <div id="trainerinterface">Trainer Interface</div>
-<div id ="subuser"> Tell us a bit more about yourself so we can help you reach your goals </div><div id="workoutsshow"><%= render 'subuserform' %></div>
-<div id="usermetrics"> Check your progress </div>
-<div id="workouts"> Workouts </div>
+<div id="trainerinterfaceshow">Say Hi to your new worst enemy</div></br>
+<div id ="subuser"> <strong>Tell us a bit more about yourself so we can help you reach your goals</strong> </div><div id="workoutsshow"><%= render 'subuserform' %></div></br>
+<div id="usermetrics"> Check your progress </div></br>
+<div id="workouts"> Workouts </div></br>
 
 
 <script>
@@ -27,6 +29,12 @@ $(function() {
     console.log("derp")
   });
 });
-
+$(function() {
+  $("#trainerinterface").on('click', function(){
+    event.preventDefault();
+    $("#trainerinterfaceshow").show();
+    console.log("derp")
+  });
+});
 
 </script>
