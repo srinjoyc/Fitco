@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
- 
+
   # get 'login' => 'sessions#new'
   # post 'login' => 'sessions#create'
+  post '/users/:id' => 'users#show'
 
-  
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
    root 'users#index'

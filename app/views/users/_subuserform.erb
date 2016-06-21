@@ -1,26 +1,21 @@
 
-<%= form_for :subuser, id: "workoutform" do |f| %>
+<%= form_for @user, id: "workoutform", method: :update do |f| %>
 
   <%= f.label :age, "Age" %>
-  <%= f.text_field :age, class: "shortInput" %> <br />
+  <%= f.text_field :age, class: "extraInfo" %> <br />
 
   <%= f.label :weight, "Weight" %>
-  <%= f.text_field :weight, class: "shortInput" %> <br />
+  <%= f.text_field :weight, class: "extraInfo" %> <br />
 
   <%= f.label :height, "Height" %>
-  <%= f.text_field :height, class: "shortInput" %> <br />
+  <%= f.text_field :height, class: "extraInfo" %> <br />
 
   <%= f.label :workoutgoals %>
-  <%= f.text_field :workoutgoals, class: "shortInput" %> <br />
+  <%= f.text_field :workoutgoals, class: "extraInfo" %> <br />
 
-  <%= f.label :workouthistory, "Confirm Password" %>
-  <%= f.text_field :workouthistory, class: "shortInput" %> <br />
+  <%= f.label :workouthistory, "workouthistory" %>
+  <%= f.text_field :workouthistory, class: "extraInfo" %> <br />
 
-  <%= f.label :maxbenchpress, "Max Bench Press" %>
-  <%= f.text_field :maxbenchpress, class: "shortInput" %> <br />
-  
-  <%= f.label :fastest100meters, "Fastest 100 meters" %>
-  <%= f.text_field :fastest100meters, class: "shortInput" %> <br />
 
   <%= f.submit "Create account", id: "submit" %>
 
