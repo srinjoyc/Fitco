@@ -1,10 +1,10 @@
-class SchedulesController < ApplicationController
+class ScheduleController < ApplicationController
   before_action :set_schedule, only: [:show, :edit, :update, :destroy]
 
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedules = Schedule.all
+    @schedule = Schedule.first
   end
 
   # GET /schedules/1
@@ -23,6 +23,7 @@ class SchedulesController < ApplicationController
 
   # POST /schedules
   # POST /schedules.json
+  # POST TO CREATE APPOINTMENT 
   def create
     @schedule = Schedule.new(schedule_params)
 

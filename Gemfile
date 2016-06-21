@@ -5,6 +5,8 @@ gem 'rails', '4.2.6'
 gem 'therubyracer'
 gem 'pg'
 gem 'execjs'
+#Allows easier use of foreign keys in db migrations
+gem 'foreigner'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
