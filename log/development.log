@@ -12639,3 +12639,1045 @@ Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323
 
 
 Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-19 21:26:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-20 00:45:08 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:45:19 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:45:19 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:45:19 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:48:19 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:49:09 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:49:10 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:49:26 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:49:29 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:49:55 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:49:57 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:50:25 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:50:26 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:50:48 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:50:54 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:50:55 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:50:56 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:50:57 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:52:10 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:52:11 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:52:29 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:52:30 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:56:28 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:56:29 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:56:43 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:56:58 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:56:59 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 00:57:13 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 00:57:14 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 01:01:44 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 01:01:44 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 01:01:44 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 01:03:05 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/videos.self-a56c79ecb46f2c62f4784d36eddf8f48609e23ee71336b8f51ed96c2350c2590.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 01:04:31 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 82ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/videos.self-18b4f4ab33100b0830ef9e67fb2989245e865a9f22849008c1f700cac0433f45.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 01:16:45 -0700
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 01:17:33 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/videos.self-906df5e5ede04f95ded707307f70b9a4f3e97a47a98b03021a848d08218a3e8b.css?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/appointments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/appointments.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/videos.self-2dfad17b5681dbb5e1fd809ef9bbc5fb93042812ffa36161dbcfa1fb638da6e2.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 01:17:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-20 15:27:28 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/videos/11" for 127.0.0.1 at 2016-06-20 15:27:30 -0700
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendered videos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dragula.js" for 127.0.0.1 at 2016-06-20 15:27:31 -0700
+
+
+Started GET "/assets/videos.css" for 127.0.0.1 at 2016-06-20 15:27:31 -0700

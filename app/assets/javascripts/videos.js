@@ -2,6 +2,7 @@
 $( document ).ready(function(){
   // Initialize an OpenTok Session object
   var session = TB.initSession(sessionId);
+  var drake = dragula();
 
   // Initialize a Publisher, and place it into the element with id="publisher"
   var publisher = TB.initPublisher(apiKey, 'publisher', {width: '100%', height: '100%'});
@@ -44,6 +45,7 @@ $( document ).ready(function(){
 
 // Text chat
 var form = document.querySelector('#chat-entry');
+var cards = document.querySelector('#cards');
 var msgTxt = document.querySelector('#msgTxt');
 
 // Send a signal once the user enters data in the form
@@ -60,8 +62,22 @@ form.addEventListener('submit', function(event) {
     });
 });
 
+cards.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  session.signal({
+      type: 'msg',
+      data: 'cards'
+    }, function(error) {
+      if (!error) {
+        msgTxt.value = '';
+      }
+    });
+});
+
 
   dragula([left1, right1]);
+
 });
 
 
