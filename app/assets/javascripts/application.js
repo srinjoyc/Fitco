@@ -15,3 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require facebook.js
+//= require videos.js
+//= require dragula.js
+//= require trainers.js
+
