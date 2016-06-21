@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :exercises
   resources :schedules
   resources :trainers
   resources :appointments

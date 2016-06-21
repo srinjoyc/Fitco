@@ -3405,3 +3405,586 @@ Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 
 
 Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 127.0.0.1 at 2016-06-21 03:46:34 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (20.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExercises (20160621221835)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (640.4ms)[0m  [1mCREATE TABLE "exercises" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160621221835"]]
+  [1m[36m (31.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserstoExercise (20160621221858)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserstoExercise (20160621221858)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "exercises" ADD "appointment_id" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "exercises" ADD "users_id" integer
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160621221858"]]
+  [1m[35m (26.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'appointments'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.9ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'exercises'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (2.1ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'schedules'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (2.1ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'trainers'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (2.1ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'users'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (2.1ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'videos'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (2.0ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'appointments'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (2.0ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'exercises'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'schedules'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.9ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'trainers'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'users'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.9ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'videos'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (31.6ms)[0m  [1mINSERT INTO "users" ("firstname", "lastname", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Srinjoy"], ["lastname", "Chakraborty"], ["email", "srinjoycal@gmail.com"], ["password", "1234"], ["created_at", "2016-06-21 22:27:36.550200"], ["updated_at", "2016-06-21 22:27:36.550200"]]
+  [1m[35m (18.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (66.1ms)[0m  INSERT INTO "trainers" ("firstname", "lastname", "gender", "description", "email", "phone", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["firstname", "Declan"], ["lastname", "Foody"], ["gender", "M"], ["description", "Body Transformation Expert, Certified Personal Trainer"], ["email", "charles.foody@mail.mcgill.ca"], ["phone", "7788888888"], ["url", "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg"], ["created_at", "2016-06-21 22:27:36.624063"], ["updated_at", "2016-06-21 22:27:36.624063"]]
+  [1m[36m (11.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (9.0ms)[0m  [1mINSERT INTO "schedules" ("time", "trainer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["time", "2016-06-23 00:00:00.000000"], ["trainer_id", 1], ["created_at", "2016-06-21 22:27:36.727424"], ["updated_at", "2016-06-21 22:27:36.727424"]]
+  [1m[35m (9.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (21.3ms)[0m  INSERT INTO "appointments" ("user_id", "trainer_id", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 1], ["trainer_id", 1], ["time", "2016-06-23 00:00:00.000000"], ["created_at", "2016-06-21 22:27:36.772281"], ["updated_at", "2016-06-21 22:27:36.772281"]]
+  [1m[36m (30.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDescriptiontoExercise (20160621222855)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (96.4ms)[0m  [1mALTER TABLE "exercises" ADD "name" text[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "exercises" ADD "metric" character varying
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "exercises" ADD "description" text[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160621222855"]]
+  [1m[36m (23.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.0ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'appointments'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.7ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'exercises'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.8ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'schedules'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'trainers'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.8ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'users'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'videos'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.8ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'appointments'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'exercises'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.9ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'schedules'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'trainers'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36m (1.8ms)[0m  [1m
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'users'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        [0m
+  [1m[35m (1.9ms)[0m  
+          SELECT t2.relname AS to_table
+               , a1.attname AS column
+               , a2.attname AS primary_key
+               , c.conname AS name
+               , c.confdeltype AS dependency
+               , c.confupdtype AS update_dependency
+               , c.condeferrable AS deferrable
+               , c.condeferred AS deferred
+            , c.convalidated AS valid
+          FROM pg_constraint c
+          JOIN pg_class t1 ON c.conrelid = t1.oid
+          JOIN pg_class t2 ON c.confrelid = t2.oid
+          JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+          JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+          JOIN pg_namespace t3 ON c.connamespace = t3.oid
+          WHERE c.contype = 'f'
+            AND t1.relname = 'videos'
+            AND t3.nspname = ANY (current_schemas(false))
+          ORDER BY c.conname
+        
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("firstname", "lastname", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Srinjoy"], ["lastname", "Chakraborty"], ["email", "srinjoycal@gmail.com"], ["password", "1234"], ["created_at", "2016-06-21 22:31:21.436020"], ["updated_at", "2016-06-21 22:31:21.436020"]]
+  [1m[35m (20.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "trainers" ("firstname", "lastname", "gender", "description", "email", "phone", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["firstname", "Declan"], ["lastname", "Foody"], ["gender", "M"], ["description", "Body Transformation Expert, Certified Personal Trainer"], ["email", "charles.foody@mail.mcgill.ca"], ["phone", "7788888888"], ["url", "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg"], ["created_at", "2016-06-21 22:31:21.469133"], ["updated_at", "2016-06-21 22:31:21.469133"]]
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schedules" ("time", "trainer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["time", "2016-06-23 00:00:00.000000"], ["trainer_id", 1], ["created_at", "2016-06-21 22:31:21.490196"], ["updated_at", "2016-06-21 22:31:21.490196"]]
+  [1m[35m (11.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "appointments" ("user_id", "trainer_id", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 1], ["trainer_id", 1], ["time", "2016-06-23 00:00:00.000000"], ["created_at", "2016-06-21 22:31:21.510834"], ["updated_at", "2016-06-21 22:31:21.510834"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("firstname", "lastname", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Srinjoy"], ["lastname", "Chakraborty"], ["email", "srinjoycal@gmail.com"], ["password", "1234"], ["created_at", "2016-06-21 22:31:39.033517"], ["updated_at", "2016-06-21 22:31:39.033517"]]
+  [1m[35m (28.6ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "trainers" ("firstname", "lastname", "gender", "description", "email", "phone", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["firstname", "Declan"], ["lastname", "Foody"], ["gender", "M"], ["description", "Body Transformation Expert, Certified Personal Trainer"], ["email", "charles.foody@mail.mcgill.ca"], ["phone", "7788888888"], ["url", "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg"], ["created_at", "2016-06-21 22:31:39.090047"], ["updated_at", "2016-06-21 22:31:39.090047"]]
+  [1m[36m (5.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schedules" ("time", "trainer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["time", "2016-06-23 00:00:00.000000"], ["trainer_id", 1], ["created_at", "2016-06-21 22:31:39.115273"], ["updated_at", "2016-06-21 22:31:39.115273"]]
+  [1m[35m (2.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "appointments" ("user_id", "trainer_id", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 1], ["trainer_id", 1], ["time", "2016-06-23 00:00:00.000000"], ["created_at", "2016-06-21 22:31:39.133366"], ["updated_at", "2016-06-21 22:31:39.133366"]]
+  [1m[36m (7.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("firstname", "lastname", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Srinjoy"], ["lastname", "Chakraborty"], ["email", "srinjoycal@gmail.com"], ["password", "1234"], ["created_at", "2016-06-21 22:31:54.366628"], ["updated_at", "2016-06-21 22:31:54.366628"]]
+  [1m[35m (16.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "trainers" ("firstname", "lastname", "gender", "description", "email", "phone", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["firstname", "Declan"], ["lastname", "Foody"], ["gender", "M"], ["description", "Body Transformation Expert, Certified Personal Trainer"], ["email", "charles.foody@mail.mcgill.ca"], ["phone", "7788888888"], ["url", "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg"], ["created_at", "2016-06-21 22:31:54.395681"], ["updated_at", "2016-06-21 22:31:54.395681"]]
+  [1m[36m (11.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schedules" ("time", "trainer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["time", "2016-06-23 00:00:00.000000"], ["trainer_id", 1], ["created_at", "2016-06-21 22:31:54.415839"], ["updated_at", "2016-06-21 22:31:54.415839"]]
+  [1m[35m (13.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "appointments" ("user_id", "trainer_id", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 1], ["trainer_id", 1], ["time", "2016-06-23 00:00:00.000000"], ["created_at", "2016-06-21 22:31:54.436620"], ["updated_at", "2016-06-21 22:31:54.436620"]]
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "exercises" ("appointment_id", "users_id", "name", "metric", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["appointment_id", 1], ["users_id", 1], ["name", "Push Ups"], ["metric", "10 reps"], ["description", "Chin to the ground"], ["created_at", "2016-06-21 22:31:54.453363"], ["updated_at", "2016-06-21 22:31:54.453363"]]
+  [1m[35m (8.9ms)[0m  COMMIT
