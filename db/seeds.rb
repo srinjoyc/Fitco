@@ -6,4 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Trainer.create(firstname: "Declan", lastname: "Foody", gender: "M", description: "Body Transformation Expert, Certified Personal Trainer", email: "charles.foody@mail.mcgill.ca", phone: "7788888888", url: "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg")
-Schedule.create(time: DateTime.new(2016,6,23), trainers_id: 1)
+Schedule.create(time: DateTime.new(2016,6,23), trainer_id: 1)

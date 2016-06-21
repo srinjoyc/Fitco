@@ -3,8 +3,7 @@ require 'foreigner'
 class AddTimetoAppointment < ActiveRecord::Migration
  def change
  	change_table :appointments do |t|
-    	t.references :users
-      t.references :trainers
+      t.integer :trainer_id
       t.datetime :time
     end
   end
