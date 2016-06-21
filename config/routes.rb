@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :schedules
   resources :trainers
   resources :appointments
   get 'auth/:provider/callback', to: 'sessions#create'
@@ -11,6 +12,10 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resources :videos
   resources :trainers
+
+  resources :trainers do 
+    resources :schedule
+  end 
 
   get '/trainers/search/:txt' => 'trainers#search'
   # The priority is based upon order of creation: first created -> highest priority.

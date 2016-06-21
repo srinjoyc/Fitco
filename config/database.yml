@@ -25,7 +25,3 @@ production:
   <<: *default
   database: fitco
 
-production:
-  <<: *default
-  database: db/production.psql
-
