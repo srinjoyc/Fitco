@@ -2879,7 +2879,7 @@ input[type="button"].btn-block {
   .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: rgba(0, 0, 0, 0.8); }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.3); }
+  color: #ffffff; }
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(0, 0, 0, 0.6); }
 .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .open > .nav-link:focus, .navbar-light .navbar-nav .open > .nav-link:hover,
@@ -4915,7 +4915,7 @@ header.navbar {
   height: 55px;
   padding: 0 0;
   line-height: 55px;
-  background-color: #fff;
+  background-color: #000;
   border-bottom: 1px solid #d1d4d7; }
   header.navbar .container-fluid {
     padding: 0; }
@@ -4946,7 +4946,7 @@ header.navbar {
     height: 55px;
     padding: 0 1rem;
     background-color: #141519;
-    background-image: url("/images/logo-light.png");
+    background-image: url("../img/logo-light.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70px auto; }
@@ -8646,7 +8646,7 @@ ul.ColVis_collection {
 .irs-bar,
 .irs-bar-edge,
 .irs-slider {
-  background: url(/images/sprite-skin-modern.png) repeat-x; }
+  background: url(../img/sprite-skin-modern.png) repeat-x; }
 
 .irs {
   height: 50px; }
@@ -8874,7 +8874,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   font-size: 1px;
   text-decoration: none;
   border: 0;
-  background: url("/images/select2.png") right top no-repeat;
+  background: url("../img/select2.png") right top no-repeat;
   cursor: pointer;
   outline: 0; }
 
@@ -8963,7 +8963,7 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow {
   display: block;
   width: 100%;
   height: 100%;
-  background: url("/images/select2.png") no-repeat 0 1px; }
+  background: url("../img/select2.png") no-repeat 0 1px; }
 
 html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
   background-position: 2px 1px; }
@@ -8991,19 +8991,19 @@ html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #fff url("/images/select2.png") no-repeat 100% -22px;
-  background: url("/images/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
-  background: url("/images/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
-  background: url("/images/select2.png") no-repeat 100% -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
-  background: url("/images/select2.png") no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; }
+  background: #fff url("../img/select2.png") no-repeat 100% -22px;
+  background: url("../img/select2.png") no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+  background: url("../img/select2.png") no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("../img/select2.png") no-repeat 100% -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("../img/select2.png") no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; }
 
 html[dir="rtl"] .select2-search input {
   padding: 4px 5px 4px 20px;
-  background: #fff url("/images/select2.png") no-repeat -37px -22px;
-  background: url("/images/select2.png") no-repeat -37px -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
-  background: url("/images/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
-  background: url("/images/select2.png") no-repeat -37px -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
-  background: url("/images/select2.png") no-repeat -37px -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; }
+  background: #fff url("../img/select2.png") no-repeat -37px -22px;
+  background: url("../img/select2.png") no-repeat -37px -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+  background: url("../img/select2.png") no-repeat -37px -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("../img/select2.png") no-repeat -37px -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url("../img/select2.png") no-repeat -37px -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0; }
 
 .select2-search input.select2-active {
   background: #fff url("select2-spinner.gif") no-repeat 100%;
@@ -9293,7 +9293,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
   top: 4px;
   font-size: 1px;
   outline: none;
-  background: url("/images/select2.png") right top no-repeat; }
+  background: url("../img/select2.png") right top no-repeat; }
 
 html[dir="rtl"] .select2-search-choice-close {
   right: auto;
@@ -10034,7 +10034,7 @@ body > .ui-select-bootstrap.open {
     outline: 0; }
 
 select {
-  background: white url("/images/select.png") no-repeat !important;
+  background: white url("../img/select.png") no-repeat !important;
   background-size: 24px 20px !important;
   background-position: right center !important;
   border-radius: 0px !important;
@@ -10113,14 +10113,14 @@ select {
   box-shadow: none; }
 
 .select2-search-choice-close {
-  background: url("/images/select2.png") right top no-repeat; }
+  background: url("../img/select2.png") right top no-repeat; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx) {
   .select2-search input,
   .select2-search-choice-close,
   .select2-container .select2-choice abbr,
   .select2-container .select2-choice .select2-arrow b {
-    background-image: url("/images/select2x2.png") !important; } }
+    background-image: url("../img/select2x2.png") !important; } }
 /*!
  * FullCalendar v2.4.0 Stylesheet
  * Docs & License: http://fullcalendar.io/
