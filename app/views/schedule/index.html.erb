@@ -1,22 +1,37 @@
+<style>
+tr:nth-child(even){
+	background-color:#C8D4CC
+}
 
- <h1> Hi </h1>
- <%= @schedule.time %>
+tr:hover {
+	background-color: red;
+}
 
- .hero__layout > .site__centered{
-    background-color: black;
-    opacity: 0.8;
-    width: 100%;
- }
+</style>
+<script>
 
- .time-schedule__place {
-  margin-top: 25px;
-  font-size: 18px;
- }
-
- hero hero-full__schedule{
-  height: 90px;
- }
-
- .schedule__info > .btn btn_7 {
-  display:none;
- }
+</script>
+<div class="container">
+	<div class="table-responsive">
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th>Today's Available Times</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  <% @hours.each_with_index do |hour, index| %>
+		    <% if (index%2 != 0) %>
+		    <tr>
+		      <td> <%= hour %> </td>
+		    </tr>
+		    <% else %>
+		    <tr>
+		      <td> <%= hour %> </td>
+		      <% end %>
+		    </tr>
+		   <% end %>
+		  </tbody>
+		</table>
+	</div>
+</div>
