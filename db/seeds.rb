@@ -5,7 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-User.create(firstname:'Declan', lastname: "Foody", email: 'declan@mail.com')
+
+
 Trainer.create(firstname: "Declan", lastname: "Foody", gender: "M", description: "Body Transformation Expert, Certified Personal Trainer", email: "charles.foody@mail.mcgill.ca", phone: "7788888888", url: "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg")
 Schedule.create(time: DateTime.new(2016,6,23), trainer_id: 1)
+
+
+User.create(firstname:"Srinjoy", lastname: "Chakraborty", email:"srinjoycal@gmail.com", password: "123456")
+User.create(firstname:"Declan", lastname: "Foody", email:"declan@gmail.com", password:"declan", workouthistory:"Epic", workoutgoals:"Get Yoked", age:"24", height: "181", weight: "203", idealweight:"190", image_url:"https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/12119009_10153687348989511_8043081557208981017_n.jpg?oh=b05b2e2db0b9347b3398123dc53ae673&oe=57CEFA2D")
+Trainer.create(firstname: "Declan", lastname: "Foody", gender: "M", description: "Body Transformation Expert, Certified Personal Trainer", email: "charles.foody@mail.mcgill.ca", phone: "7788888888", url: "https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11192872_1582522302026444_681742067_n.jpg")
+Schedule.create(time: DateTime.new(2016,6,23), trainer_id: 1)
+Appointment.create(user_id: 1, trainer_id: 1, time: DateTime.new(2016,6,23))
+Exercise.create(appointment_id: 1, users_id: 1, name: "Push Ups", metric: "10 reps", description: "Chin to the ground")
 

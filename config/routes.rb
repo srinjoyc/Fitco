@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   
 
+
   get 'sessions/new'
+
+
+  resources :exercises
 
   resources :schedules
   resources :trainers

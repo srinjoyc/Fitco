@@ -1,15 +1,19 @@
-$(function() {
-  var handlers = {
 
+$(function() {
+
+var handlers = {
   showWorkout: function(){
     console.log("werkwerk");
 
     $.ajax({
       method: 'GET',
-      dataType: 'json',
-      url: 'workout/index',
+      dataType: 'HTML',
+      url: '/exercises',
       success: function(data){
-        handlers.showWorkout(data);
+        event.preventDefault()
+        console.log("success");
+        $("#workouts").append(data);
+        // handlers.showWorkout(data);
       },
       error: function(){
         alert("error");
@@ -23,7 +27,7 @@ $(function() {
     $.ajax({
       method: 'GET',
       datatype: 'form',
-      url: '/users/new',
+      url: '/v',
       success: function(data){
         // handlers.editUser(data);
       },
@@ -33,46 +37,27 @@ $(function() {
       }
     })
   },
-  showUser: function(){
-    console.log();
-
-    $.ajax({
-      method:'GET',
-      data:'html/text',
-      url: '/users/new',
-      success: function(user){
-        event.preventDefault();
-        // handlers.showUser(user); 
-        $('#userprofile').append(user);
-        console.log(user)
-      },
-      error: function(){
-        alert("error");
-        console.log("cmonnn")
-      }
-    });
-  },
-  postForm: function(users){
-
-  }
-};
-  // postForm: function(users){
-  //   console.log('posting form');
-  //   var table = $("#users").find('tbody').empty();
-
+  // showUser: function(){
+  //   console.log();
 
   //   $.ajax({
-  //     method: 'POST',
-  //     datatype: 'json',
-  //     url:'/new'
+  //     method:'GET',
+  //     data:'html/text',
+  //     url: '',
   //     success: function(user){
-  //       handlers.postForm();
-  //       $('#submit').append()
+  //       event.preventDefault();
+  //       // handlers.showUser(user); 
+  //       $('#userprofile').append(user);
+  //       console.log(user)
+  //     },
+  //     error: function(){
+  //       alert("error");
+  //       console.log("cmonnn")
   //     }
-  //   })
-  // }
-
-  $('#trainerinterface').on('click', handlers.editUser)
-  $('#userprofile').on('click', handlers.showUser)
-  $('#workouts').on('click', handlers.showWorkout)
+  //   });
+  // },
+};
+  $('#trainerinterface').on('click', handlers.editUser);
+  // $('#userprofile').on('click', handlers.showUser)
+  $('#workouts').on('click', handlers.showWorkout);
 });

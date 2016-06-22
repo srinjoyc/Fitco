@@ -1,14 +1,16 @@
-<script src="jquery.js"></script>
+<!-- <script src="jquery.js"></script> -->
+
 
 <div class="welcome"><img id="profilepic" src="<%= @user.image_url %>"><h1>Hey <strong><%= @user.firstname %>!</strong> Welcome Back!</h1>
 <h3> We're looking forward to helping you get on track</h3></div>
 <div class="basicinfo"><h3>Current Weight:<strong> <%= @user.weight %> </strong> Current Workout Goals: <%= @user.workoutgoals %></h3>
-<h3>Target Weight: <strong><%= @user.idealweight %></strong> </h3>  <h5>You're getting there! <%= @user.weight - @user.idealweight %> Pounds to go. Keep it up!</h5></div>
+<h3>Target Weight: <strong><%= @user.idealweight %></strong> </h3>  <h5>You're getting there! Keep it up!</h5></div>
 
 <div id="userprofile">User Profile</button> </br>
 <div id="trainerinterface">Trainer Interface</div>
 <div id="trainerinterfaceshow">Say Hi to your new worst enemy</div></br>
-<div id ="subuser"> <strong>Tell us a bit more about yourself so we can help you reach your goals</strong> </div><div id="workoutsshow"><%= render 'subuserform' %></div></br>
+<div id ="subuser"> <strong>Tell us a bit more about yourself so we can help you reach your goals</strong> </div>
+<div id="moreuserinfo"><%= render 'subuserform' %></div></br>
 <div id="usermetrics"> Check your progress </div></br>
 <div id="workouts"> Workouts </div></br>
 
@@ -16,26 +18,23 @@
 <script>
 
 $(function() {
-    console.log( "ready!" );
-  $("#workoutsshow").hide();
+  // console.log("the JS code inside the view says we're ready!");
+
+  $("#moreuserinfo").hide();
   $("#userprofilecontent").hide();
   $("#usermetricsshow").hide();
   $("#trainerinterfaceshow").hide();
-    console.log("brap")
-  });
-$(function() {
+
   $("#subuser").on('click', function(){
     event.preventDefault();
-    $("#workoutsshow").show();
-    console.log("derp")
+    $("#moreuserinfo").toggle();
   });
-});
-$(function() {
+
   $("#trainerinterface").on('click', function(){
     event.preventDefault();
     $("#trainerinterfaceshow").show();
-    console.log("derp")
   });
+
 });
-<% render "partials/sidenav" %>
+
 </script>
