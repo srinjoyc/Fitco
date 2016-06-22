@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   get 'sessions/new'
 
+  resources :schedules
+  resources :trainers
+  resources :appointments
+
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
@@ -14,7 +18,16 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
    root 'users#index'
+  resources :sessions, only: [:create, :destroy]
+
   resources :videos
+  resources :trainers
+
+  resources :trainers do 
+    resources :schedule
+  end 
+
+  get '/trainers/search/:txt' => 'trainers#search'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

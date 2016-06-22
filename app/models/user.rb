@@ -1,16 +1,13 @@
 class User < ActiveRecord::Base
-   has_many :trainers
+
+  has_many :trainers
 
   has_secure_password
+  has_many :trainers
+  has_many :appointments
+  validates :firstname, :lastname, :email, presence: true
 
-  validates :email,
-    presence: true
 
-  validates :firstname,
-    presence: true
-
-  validates :lastname,
-    presence: true
 
   validates :password,
     length: { in: 6..20 }, on: :create

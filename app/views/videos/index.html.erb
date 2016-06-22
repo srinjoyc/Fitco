@@ -1,27 +1,44 @@
-  <html>
-  <head>
-    <title>Twilio Video - Conversations Quickstart</title>
-    <link rel="stylesheet" href="https://media.twiliocdn.com/sdk/quickstart/conversations-quickstart.min.css">
-  </head>
-  <body>
-  <div id="remote-media"></div>
-  <div id="controls">
-    <div id="preview">
-      <p class="instructions">Lookin' good!</p>
-      <div id="local-media"></div>
-      <button id="button-preview">Preview My Camera</button>
+<script src="https://static.opentok.com/v2.6/js/opentok.min.js"></script>
+<script type="text/javascript">
+  var apiKey = '<%= @video_session.api_key %>';
+  var sessionId = '<%= @video_session.session_id %>';
+  var token = '<%= @video_session.token %>';
+</script>
+<script src="/assets/dragula.js"></script>
+<link href="/assets/videos.css" rel="stylesheet">
+
+<h2>Nav</h2>
+
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-sm-4">
+      <div id="publisher"></div>
     </div>
-    <div id="invite-controls">
-      <p class="instructions">Invite another Client</p>
-      <input id="invite-to" type="text" placeholder="Identity to invite" />
-      <button id="button-invite">Send Invite</button>
+    <div class="col-sm-8">
+      <div id='left1' class='container'>
+        <div>Move me, but you can only drop me in one of these containers.</div>
+        <div>If you try to drop me somewhere other than these containers, I'll just come back.</div>
+        <div>Item 6.</div>
+      </div>
+      <div id='right1' class='container'>
+        <div>You can drop me in the left container, otherwise I'll stay here.</div>
+        <div>Item 4.</div>
+        <div>Item 5.</div>
+      </div>
     </div>
-    <div id="log">
-      <p>&gt;&nbsp;<span id="log-content">Preparing to listen</span>...</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div id="subscribers"></div>
     </div>
-  </div><!-- /controls -->
-  <script src="https://media.twiliocdn.com/sdk/js/common/v0.1/twilio-common.min.js"></script>
-  <script src="https://media.twiliocdn.com/sdk/js/conversations/v0.13/twilio-conversations.min.js"></script>
-  <script src="quickstart.js"></script>
-  </body>
-</html>
+    <div class="col-sm-8">
+       <div id="textchat">
+         <p id="history"></p>
+         <form id="chat-entry">
+           <input type="text" placeholder="Input your text here" id="msgTxt"></input>
+           <button value="submit" class="btn-success">Submit</button>
+         </form>
+       </div>
+    </div>
+  </div>
+</div>

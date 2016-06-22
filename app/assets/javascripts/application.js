@@ -10,8 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require facebook.js
-//= require_tree .
+//= require videos.js
+//= require dragula.js
+//= require trainers.js
+

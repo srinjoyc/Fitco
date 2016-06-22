@@ -7,7 +7,7 @@ $(function() {
     $.ajax({
       method: 'GET',
       dataType: 'json',
-      url: 'videos/index',
+      url: 'workout/index',
       success: function(data){
         handlers.showWorkout(data);
       },
