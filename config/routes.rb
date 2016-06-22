@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
 
+  root to: 'home#index'
+
   resources :trainers
   resources :appointments
   get 'auth/:provider/callback', to: 'sessions#create'
