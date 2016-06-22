@@ -9,6 +9,28 @@ tr:hover {
 
 </style>
 <script>
+$(function () {
+    $(".bookableHour").on('click', function () {
+        var bookedTime = $(this).text();
+        $.ajax({
+        		type: 'POST',
+            url: '/appointments',
+            dataType : 'json',
+            data: {
+                time: bookedTime.charAt(1), //need to pass hour, char(0) is whitespace 
+                trainer_id: 1, //TODO replace with value of trainer:id
+                user_id: 1, //current user 
+            },
+            success: function(json)
+            {
+            	alert(json)
+            },
+            error: function(json) {
+            	alert("ajax error")
+            }
+        });
+    });
+});
 
 </script>
 <div class="container">
@@ -23,11 +45,11 @@ tr:hover {
 		  <% @hours.each_with_index do |hour, index| %>
 		    <% if (index%2 != 0) %>
 		    <tr>
-		      <td> <%= hour %> </td>
+		      <td class="bookableHour"> <%= hour %> </td>
 		    </tr>
 		    <% else %>
 		    <tr>
-		      <td> <%= hour %> </td>
+		      <td class="bookableHour"> <%= hour %> </td>
 		      <% end %>
 		    </tr>
 		   <% end %>

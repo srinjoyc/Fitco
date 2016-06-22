@@ -1,5 +1,7 @@
 class AppointmentsController < ApplicationController
   before_action :set_appointment, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery with: :null_session
+  skip_before_action :verify_authenticity_token
   @@sessions = {}
   # GET /appointments
   # GET /appointments.json
@@ -31,8 +33,13 @@ class AppointmentsController < ApplicationController
   # POST /appointments
   # POST /appointments.json
   def create
-    @appointment = Appointment.new(appointment_params)
-
+    hour = params['time'].to_i
+    day = DateTime.now.day
+    month = DateTime.now.month
+    year = DateTime.now.year
+    @appointment = Appointment.new(user_id: params['user_id'].to_i, 
+                                   trainer_id: params['trainer_id'].to_i, 
+                                   time: DateTime.new(year,month,day,hour))
     respond_to do |format|
       if @appointment.save
         format.html { redirect_to @appointment, notice: 'Appointment was successfully created.' }
