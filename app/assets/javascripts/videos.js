@@ -3,10 +3,27 @@ $( document ).ready(function(){
   // Initialize an OpenTok Session object
   var session = TB.initSession(sessionId);
   var drake = dragula();
+  var resize_counter = 0;
+  var subscriber;
 
   // Initialize a Publisher, and place it into the element with id="publisher"
   var publisher = TB.initPublisher(apiKey, 'publisher', {width: '100%', height: '100%'});
   // Attach event handlers
+  $("#resize").click( function resizePublisher(){
+      resize_counter += 1;
+      if(resize_counter%2 != 0){
+        publisher.element.style.width = "1000px";
+        publisher.element.style.height = "750px";
+        subscriber.element.style.width = "1000px";
+        subscriber.element.style.height = "750px";
+      } else {
+        publisher.element.style.width = "100%";
+        publisher.element.style.height = "400px";
+        subscriber.element.style.width = "100%";
+        subscriber.element.style.height ="750px";
+      }
+    });
+
   session.on({
 
     // This function runs when session.connect() asynchronously completes
@@ -25,7 +42,7 @@ $( document ).ready(function(){
       document.getElementById('subscribers').appendChild(subContainer);
 
       // Subscribe to the stream that caused this event, put it inside the container we just made
-      session.subscribe(event.stream, subContainer, {width: '100%', height: '100%'});
+      subscriber = session.subscribe(event.stream, subContainer, {width: '100%', height: '100%'});
     }
 
   });
@@ -52,29 +69,28 @@ var msgTxt = document.querySelector('#msgTxt');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  session.signal({
-      type: 'msg',
-      data: msgTxt.value
-    }, function(error) {
-      if (!error) {
-        msgTxt.value = '';
-      }
+      session.signal({
+          type: 'msg',
+          data: msgTxt.value
+        }, function(error) {
+          if (!error) {
+            msgTxt.value = '';
+          }
+        });
     });
-});
 
-cards.addEventListener('submit', function(event) {
-  event.preventDefault();
+    cards.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-  session.signal({
-      type: 'msg',
-      data: 'cards'
-    }, function(error) {
-      if (!error) {
-        msgTxt.value = '';
-      }
+      session.signal({
+          type: 'msg',
+          data: 'cards'
+        }, function(error) {
+          if (!error) {
+            msgTxt.value = '';
+          }
+        });
     });
-});
-
 
   dragula([left1, right1]);
 
