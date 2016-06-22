@@ -72,7 +72,7 @@ a {
     transition: all .2s ease-in-out;
 /*    text-decoration: none;*/
 }
-form input[type=text] {
+form input {
   color:black;
 }
 a:hover,
