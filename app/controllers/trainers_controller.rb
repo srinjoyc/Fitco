@@ -5,11 +5,17 @@ class TrainersController < ApplicationController
   # GET /trainers.json
   def index
     @trainers = Trainer.all
+
+    respond_to do |format|
+      format.html
+      format.json{ render :json=> @trainers.to_json }
+    end
   end
 
   # GET /trainers/1
   # GET /trainers/1.json
   def show
+    @trainers = Trainer.find(params[:id])
   end
 
   # GET /trainers/new
@@ -24,17 +30,22 @@ class TrainersController < ApplicationController
   # POST /trainers
   # POST /trainers.json
   def create
-    @trainer = Trainer.new(trainer_params)
+    firstname = params[:firstname]
+      lastname = params[:lastname]
+      gender = params[:gender]
+      description = params[:description]
+      email = params[:email]
+      phone = params[:phone]
+      url = params[:url]
+      results = {result: false}
 
-    respond_to do |format|
-      if @trainer.save
-        format.html { redirect_to @trainer, notice: 'Trainer was successfully created.' }
-        format.json { render :show, status: :created, location: @trainer }
-      else
-        format.html { render :new }
-        format.json { render json: @trainer.errors, status: :unprocessable_entity }
-      end
+    @trainer = Trainer.new(firstname: firstname, lastname: lastname, gender: gender, description: description, email: email, phone: phone, url: url)
+
+    if @trainer.save
+      results[:result] = true
+      results[:id] = trainer.id
     end
+    results.to_json
   end
 
   # PATCH/PUT /trainers/1
@@ -58,6 +69,15 @@ class TrainersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to trainers_url, notice: 'Trainer was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def search
+    puts @trainer = Trainer.where(firstname: params[:txt])
+
+     respond_to do |format|
+      format.html
+      format.json{ render :json => @trainer.to_json }
     end
   end
 

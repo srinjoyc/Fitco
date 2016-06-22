@@ -2,12 +2,16 @@ Rails.application.routes.draw do
   
 
 
+
   get 'sessions/new'
 
 
   resources :exercises
 
   resources :schedules
+
+  root to: 'home#index'
+
   resources :trainers
   resources :appointments
 
@@ -21,7 +25,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-   root 'users#index'
+
   resources :sessions, only: [:create, :destroy]
 
   resources :videos
