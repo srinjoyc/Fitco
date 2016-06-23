@@ -11,6 +11,7 @@ class VideosController < ApplicationController
 	end
 
 	def show
+		#get current user and pull up appointments, pass appointments in 
 		# Good idea for later: @appt = Appointments.find(params[:id])
 		@appt = {id:5}	# bullshit dummy code, to get around lack of suitable AR/DB class
 		@video_session = @@sessions[@appt[:id]]			# violates REST (real REST and rails REST)

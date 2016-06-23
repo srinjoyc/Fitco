@@ -7,7 +7,7 @@ $( document ).ready(function(){
   var subscriber;
 
   // Initialize a Publisher, and place it into the element with id="publisher"
-  var publisher = TB.initPublisher(apiKey, 'publisher', {width: '100%', height: '100%'});
+  var publisher = TB.initPublisher(apiKey, 'small-video', {width: '100%', height: '100%'});
   // Attach event handlers
   $("#resize").click( function resizePublisher(){
       resize_counter += 1;
@@ -24,6 +24,32 @@ $( document ).ready(function(){
       }
     });
 
+  $("#add-exercise").click(function (e) {
+    e.preventDefault();
+      var name = $("#name").text();
+      var metric = $("#metric").text();
+      var description = $("#description").text();
+    $.ajax({
+        type: 'POST',
+        url: '/exercises',
+        dataType : 'json',
+        data: {
+            name: name, //TODO replace user and appointment 
+            metric: metric,
+            description: description, 
+            user_id: 1,
+            appointment_id: 1
+        },
+        success: function(json)
+        {
+          alert(json)
+        },
+        error: function(json) {
+          alert("ajax error")
+        }
+    });
+  });
+
   session.on({
 
     // This function runs when session.connect() asynchronously completes
@@ -39,7 +65,7 @@ $( document ).ready(function(){
       // the element with id="subscribers"
       var subContainer = document.createElement('div');
       subContainer.id = 'stream-' + event.stream.streamId;
-      document.getElementById('subscribers').appendChild(subContainer);
+      document.getElementById('large-video').appendChild(subContainer);
 
       // Subscribe to the stream that caused this event, put it inside the container we just made
       subscriber = session.subscribe(event.stream, subContainer, {width: '100%', height: '100%'});
@@ -78,22 +104,6 @@ form.addEventListener('submit', function(event) {
           }
         });
     });
-
-    cards.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      session.signal({
-          type: 'msg',
-          data: 'cards'
-        }, function(error) {
-          if (!error) {
-            msgTxt.value = '';
-          }
-        });
-    });
-
-  dragula([left1, right1]);
-
 });
 
 
