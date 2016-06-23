@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160622054422) do
+ActiveRecord::Schema.define(version: 20160623035345) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,7 +54,10 @@ ActiveRecord::Schema.define(version: 20160622054422) do
     t.string   "url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "user_id"
   end
+
+  add_index "trainers", ["user_id"], name: "index_trainers_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
@@ -70,7 +73,10 @@ ActiveRecord::Schema.define(version: 20160622054422) do
     t.decimal  "height"
     t.integer  "idealweight"
     t.string   "image_url"
+    t.integer  "trainer_id"
   end
+
+  add_index "users", ["trainer_id"], name: "index_users_on_trainer_id", using: :btree
 
   create_table "videos", force: :cascade do |t|
     t.datetime "created_at", null: false

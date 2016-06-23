@@ -8066,21 +8066,21 @@ header.navbar .navbar-nav .nav-link {
 
   .daterangepicker .calendar.left {
     clear: none; } }
-.toast-title {
+/*.toast-title {
   font-weight: bold; }
-
-.toast-message {
+*/
+/*.toast-message {
   -ms-word-wrap: break-word;
   word-wrap: break-word; }
-
-.toast-message a,
+*/
+/*.toast-message a,
 .toast-message label {
-  color: #ffffff; }
+  color: #fff; }
 
 .toast-message a:hover {
   color: #cccccc;
-  text-decoration: none; }
-
+  text-decoration: none; }*/
+/*
 .toast-close-button {
   position: relative;
   right: -0.3em;
@@ -8102,12 +8102,12 @@ header.navbar .navbar-nav .nav-link {
   cursor: pointer;
   opacity: 0.4;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  filter: alpha(opacity=40); }
+  filter: alpha(opacity=40); }*/
 
 /*Additional properties for button version
 iOS requires the button element instead of an anchor tag.
 If you want the anchor version, it requires `href="#"`.*/
-button.toast-close-button {
+/*/*button.toast-close-button {
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -8154,7 +8154,7 @@ button.toast-close-button {
   position: fixed;
   z-index: 999999;
   /*overrides*/ }
-
+/*
 #toast-container * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -8238,12 +8238,12 @@ button.toast-close-button {
   filter: alpha(opacity=20); }
 
 /*Animations*/
-.toast {
+/*.toast {
   opacity: 1 !important; }
 
 .toast.ng-enter {
   opacity: 0 !important;
-  transition: opacity .3s linear; }
+  transition: opacity .0s linear; }
 
 .toast.ng-enter.ng-enter-active {
   opacity: 1 !important; }
@@ -8256,7 +8256,7 @@ button.toast-close-button {
   opacity: 0 !important; }
 
 /*Responsive Design*/
-@media all and (max-width: 240px) {
+/*@media all and (max-width: 240px) {
   #toast-container > div {
     padding: 8px 8px 8px 50px;
     width: 11em; }
@@ -8275,7 +8275,7 @@ button.toast-close-button {
 @media all and (min-width: 481px) and (max-width: 768px) {
   #toast-container > div {
     padding: 15px 15px 15px 50px;
-    width: 25em; } }
+    width: 25em; } }*/*/*/*/*/
 /*!
  * angular-datatables - v0.5.0
  * https://github.com/l-lin/angular-datatables

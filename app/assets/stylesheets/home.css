@@ -120,18 +120,21 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+
 }
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: rgba(255,25,15,.8);
     background-color: transparent;
+
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
+
 }
 
 .navbar-custom .nav li.active {
@@ -144,6 +147,7 @@ a:focus {
 
 .navbar-custom .nav li.active a:hover {
     color: #fff;
+
 }
 
 @media(min-width:768px) {
@@ -300,7 +304,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(/images/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(http://static1.squarespace.com/static/556cfe74e4b011932343bf82/t/556d045ae4b0be322ef300f1/1433207899649/) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;

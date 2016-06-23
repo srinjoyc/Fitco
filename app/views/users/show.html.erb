@@ -35,17 +35,17 @@
             <div class="container-fluid">
                 <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">&#9776;</button>
                 <a class="navbar-brand" href="#">
-                    <h4>Fitco</h4>
+                    <h4>getFit</h4>
                 </a>
                 <ul class="nav navbar-nav hidden-md-down">
                     <li class="nav-item">
                         <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
                     </li>
                     <li class="nav-item p-x-1">
-                        <a class="nav-link" href="#">Dashboard</a>
+                        <a class="nav-link" href="#">Profile</a>
                     </li>
                     <li class="nav-item p-x-1">
-                        <a class="nav-link" href="#">Trainers</a>
+                        <a class="nav-link" href="/trainers">Trainers</a>
                     </li>
                     <li class="nav-item p-x-1">
                         <a class="nav-link" href="#">Settings</a>
@@ -61,7 +61,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             <img src="<%= @user.image_url %>" class="img-avatar" alt="<%= @user.image_url %>">
-                            <span class="hidden-md-down">User</span>
+                            <span class="hidden-md-down"><%= @user.full_name %></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-header text-xs-center">
@@ -79,8 +79,7 @@
                             <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="label label-default">42</span></a>
                             <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="label label-primary">42</span></a>
                             <div class="divider"></div>
-                            <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
-                            <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                            <a class="dropdown-item" href="<% link_to "Log out", session_path("current"), method: :delete %>"> Logout</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -124,8 +123,6 @@
                             <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
                             <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
                             <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="label label-default">42</span></a>
-                            <div class="divider"></div>
-                            <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
                             <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
                         </div>
                     </div>
@@ -137,7 +134,7 @@
                         Dashboard
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> DASHBOARD <span class="label label-info">NEW</span></a>
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Update Profile<span class="label label-info">NEW</span></a>
                     </li>
                     <li class="divider"></li>
                     <li class="nav-title">
@@ -423,8 +420,8 @@
             <div class="page-header">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1 class="h2 page-title">Great to see you again</h1>
-                        <div class="text-muted page-desc">Lets get you to where you want to be</div>
+                        <h1 class="h2 page-title">Lets Get To Work</h1>
+                        <div class="text-muted page-desc">make every workout be your best</div>
                     </div>
                     <div class="col-md-5 charts">
                         <div class="row">
@@ -433,8 +430,8 @@
                                     <canvas id="header-chart-1" class="chart" height="70"></canvas>
                                 </div>
                                 <div class="text-xs-center title">
-                                    <span class="text-muted">Income: </span>
-                                    <strong>$189.128</strong>
+                                    <span class="text-muted">Distance(km): </span>
+                                    <strong>89.28</strong>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4">
@@ -442,8 +439,8 @@
                                     <canvas id="header-chart-2" class="chart" height="70"></canvas>
                                 </div>
                                 <div class="text-xs-center title">
-                                    <span class="text-muted">New clients: </span>
-                                    <strong class="text-danger">1.128</strong>
+                                    <span class="text-muted">Avg Workouts per week: </span>
+                                    <strong class="text-danger">4.3</strong>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4">
@@ -451,8 +448,8 @@
                                     <canvas id="header-chart-3" class="chart" height="70"></canvas>
                                 </div>
                                 <div class="text-xs-center title">
-                                    <span class="text-muted">Orders: </span>
-                                    <strong class="text-success">2.345</strong>
+                                    <span class="text-muted">Weight Loss: </span>
+                                    <strong class="text-success">8.3</strong>
                                 </div>
                             </div>
                         </div>
@@ -508,8 +505,8 @@
                                             <a class="dropdown-item" href="#">Separated link</a>
                                         </div>
                                     </div>
-                                    <h4 class="m-b-0">9.823</h4>
-                                    <p>Members online</p>
+                                    <h4 class="m-b-0">203 lbs</h4>
+                                    <p>Weight</p>
                                 </div>
                                 <div class="chart-wrapper p-x-1">
                                     <canvas id="card-chart1" class="chart" height="70"></canvas>
@@ -523,8 +520,8 @@
                                     <button type="button" class="btn btn-info-outline active p-a-0 pull-right">
                                         <i class="icon-location-pin"></i>
                                     </button>
-                                    <h4 class="m-b-0">9.823</h4>
-                                    <p>Members online</p>
+                                    <h4 class="m-b-0">205</h4>
+                                    <p>Max Bench</p>
                                 </div>
                                 <div class="chart-wrapper p-x-1">
                                     <canvas id="card-chart2" class="chart" height="70"></canvas>
@@ -645,85 +642,7 @@
                         </div>
                     </div>
                     <!--/.card-->
-                    <div class="row row-equal">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="social-box facebook">
-                                <i class="fa fa-facebook"></i>
-                                <div class="chart-wrapper">
-                                    <canvas id="social-box-chart-1" height="90"></canvas>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <strong>89k</strong>
-                                        <span>friends</span>
-                                    </li>
-                                    <li>
-                                        <strong>459</strong>
-                                        <span>feeds</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--/.social-box-->
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="social-box twitter">
-                                <i class="fa fa-twitter"></i>
-                                <div class="chart-wrapper">
-                                    <canvas id="social-box-chart-2" height="90"></canvas>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <strong>973k</strong>
-                                        <span>followers</span>
-                                    </li>
-                                    <li>
-                                        <strong>1.792</strong>
-                                        <span>tweets</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--/.social-box-->
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="social-box linkedin">
-                                <i class="fa fa-linkedin"></i>
-                                <div class="chart-wrapper">
-                                    <canvas id="social-box-chart-3" height="90"></canvas>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <strong>500+</strong>
-                                        <span>contacts</span>
-                                    </li>
-                                    <li>
-                                        <strong>292</strong>
-                                        <span>feeds</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--/.social-box-->
-                        </div>
-                        <!--/.col-->
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="social-box google-plus">
-                                <i class="fa fa-google-plus"></i>
-                                <div class="chart-wrapper">
-                                    <canvas id="social-box-chart-4" height="90"></canvas>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <strong>894</strong>
-                                        <span>followers</span>
-                                    </li>
-                                    <li>
-                                        <strong>92</strong>
-                                        <span>circles</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--/.social-box-->
+                   
                         </div>
                         <!--/.col-->
                     </div>
@@ -878,15 +797,15 @@
                                             <ul class="horizontal-bars type-2">
                                                 <li>
                                                     <i class="icon-user"></i>
-                                                    <span class="title">Male</span>
-                                                    <span class="value">43%</span>
+                                                    <span class="title">Original Weight</span>
+                                                    <span class="value">213</span>
                                                     <div class="bars">
-                                                        <progress class="progress progress-xs progress-warning m-a-0" value="43" max="100">43%</progress>
+                                                        <progress class="progress progress-xs progress-warning m-a-0" value="213" max="300">43%</progress>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <i class="icon-user-female"></i>
-                                                    <span class="title">Female</span>
+                                                    <span class="title">Current Weight</span>
                                                     <span class="value">37%</span>
                                                     <div class="bars">
                                                         <progress class="progress progress-xs progress-warning m-a-0" value="37" max="100">37%</progress>
@@ -1624,16 +1543,9 @@
                 </div>
             </div>
         </aside>
-        <footer class="footer">
-            <span class="text-left">
-                
-            </span>
-            <span class="pull-right">
-                
-            </span>
-        </footer>
+       
         <!-- Bootstrap and necessary plugins -->
-        <script src="/js/libs/jquery.min.js"></script>
+        <!-- <script src="/js/libs/jquery.min.js"></script> -->
         <script src="/js/libs/tether.min.js"></script>
         <script src="/js/libs/bootstrap.min.js"></script>
         <script src="/js/libs/pace.min.js"></script>
@@ -1647,13 +1559,16 @@
         <script src="/js/libs/gauge.min.js"></script>
         <script src="/js/libs/moment.min.js"></script>
         <script src="/js/libs/daterangepicker.min.js"></script>
-        <!-- Custom scripts required by this view -->
         <script src="/js/views/main.js"></script>
+        
+        <!-- Custom scripts required by this view -->
+        
+
         
         
     </body>
 </html>
-<div class="welcome"><img id="profilepic" src="<%= @user.image_url %>"><h1>Hey <strong><%= @user.firstname %>!</strong> Welcome Back!</h1>
+<div class="welcome"><h1>Hey <strong><%= @user.firstname %>!</strong> Welcome Back!</h1>
 <h3> We're looking forward to helping you get on track</h3></div>
 <div class="basicinfo"><h3>Current Weight:<strong> <%= @user.weight %> </strong> Current Workout Goals: <%= @user.workoutgoals %></h3>
 <h3>Target Weight: <strong><%= @user.idealweight %></strong> </h3>  <h5>You're getting there! Keep it up!</h5></div>
