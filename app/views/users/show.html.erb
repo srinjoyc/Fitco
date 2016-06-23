@@ -65,13 +65,14 @@
           data.forEach(function(object){
             appointments.push(object);
           });
-          console.log('aapttss' + appointments);
+          console.log('aapttss' + appointments + "<%= @trainer.firstname %>");
         },
         error: function(json) {
           alert("ajax error")
         }
     });
 </script>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -714,6 +715,7 @@
                         </div>
                     </div>
                     <!--/.card--> <!--appointment_cards_here -->
+                    <%= @
                     <div class="card card-block">
                       <h4 class="card-title">Appointment: <%=Schedule.stringify([DateTime.now().hour])[0]%></h4>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

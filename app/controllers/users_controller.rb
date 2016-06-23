@@ -20,6 +20,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @trainer = Trainer.find(1);
+    @appointments = Appointment.where('user_id = 1')
   end
 
   def update 
