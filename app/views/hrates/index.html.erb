@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hrates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hrates.each do |hrate| %>
+      <tr>
+        <td><%= link_to 'Show', hrate %></td>
+        <td><%= link_to 'Edit', edit_hrate_path(hrate) %></td>
+        <td><%= link_to 'Destroy', hrate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hrate', new_hrate_path %>

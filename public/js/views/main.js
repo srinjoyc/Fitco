@@ -1,5 +1,15 @@
 $(function(){
 
+    $("#show_weight").click(function(e) {
+            $("#chart-wrapper_hr").hide(1000);
+            $("#chart-wrapper_weight").show(1000);
+    });
+    $("#show_hr").click(function(e) { 
+            $("#chart-wrapper_hr").show(1000);
+            $("#chart-wrapper_weight").hide(1000);
+            
+    });
+
     toastr.info('Bootstrap 4 on steroids', 'Welcome to ROOT Admin', {
         closeButton: true,
         progressBar: true,
@@ -233,15 +243,23 @@ $(function(){
 
     //Main Chart
     var elements = 27;
-    var data1 = [];
-    var data2 = [];
+    var data1 = weights;
+    var data2 = hrates;
     var data3 = [];
 
-    for (var i = 0; i <= elements; i++) {
-        data1.push(random(50,200));
-        data2.push(random(80,100));
-        data3.push(65);
-    }
+    var data_hr = {
+        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
+        datasets: [
+            {
+                label: 'My First dataset',
+                backgroundColor: convertHex($.brandInfo,10),
+                borderColor: $.brandInfo,
+                pointHoverBackgroundColor: '#fff',
+                borderWidth: 2,
+                data: data2
+            }
+          ]
+        };
 
     var data = {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -253,24 +271,24 @@ $(function(){
                 pointHoverBackgroundColor: '#fff',
                 borderWidth: 2,
                 data: data1
-            },
-            {
-                label: 'My Second dataset',
-                backgroundColor: 'transparent',
-                borderColor: $.brandSuccess,
-                pointHoverBackgroundColor: '#fff',
-                borderWidth: 2,
-                data: data2
-            },
-            {
-                label: 'My Third dataset',
-                backgroundColor: 'transparent',
-                borderColor: $.brandDanger,
-                pointHoverBackgroundColor: '#fff',
-                borderWidth: 1,
-                borderDash: [8, 5],
-                data: data3
             }
+            // {
+            //     label: 'My Second dataset',
+            //     backgroundColor: 'transparent',
+            //     borderColor: $.brandSuccess,
+            //     pointHoverBackgroundColor: '#fff',
+            //     borderWidth: 2,
+            //     data: data2
+            // },
+            // {
+            //     label: 'My Third dataset',
+            //     backgroundColor: 'transparent',
+            //     borderColor: $.brandDanger,
+            //     pointHoverBackgroundColor: '#fff',
+            //     borderWidth: 1,
+            //     borderDash: [8, 5],
+            //     data: data3
+            // }
         ]
     };
 
@@ -288,10 +306,10 @@ $(function(){
             }],
             yAxes: [{
                 ticks: {
-                    beginAtZero: true,
+                    beginAtZero: false,
                     maxTicksLimit: 5,
-                    stepSize: Math.ceil(250 / 5),
-                    max: 250
+                    stepSize: Math.ceil(200 / 5),
+                    max: 200
                 }
             }]
         },
@@ -305,12 +323,17 @@ $(function(){
         },
     };
     var ctx = $('#main-chart');
+    var ctx_hr = $('#main-chart_hr');
     var mainChart = new Chart(ctx, {
         type: 'line',
         data: data,
         options: options
     });
-
+    var mainChart_hr = new Chart(ctx_hr, {
+        type: 'line',
+        data: data_hr,
+        options: options
+    });
 
     //Social Box Charts
     var labels = ['January','February','March','April','May','June','July'];

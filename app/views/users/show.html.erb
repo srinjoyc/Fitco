@@ -5,6 +5,59 @@
 * Copyright 2016 creativeLabs Łukasz Holeczek
 * License : https://GenesisUI.com/license.html
 -->
+<script>
+    var weights = []
+    var hrates =[]
+    var exercises = []
+    $.ajax({
+        type: 'GET',
+        url: '/weights',
+        dataType : 'json',
+        success: function(data)
+        {
+          console.log(data);
+          data.forEach(function(object){
+            weights.push(object['weight'])
+          });
+          console.log(weights);
+        },
+        error: function(json) {
+          alert("ajax error")
+        }
+    });
+    $.ajax({
+        type: 'GET',
+        url: '/hrates',
+        dataType : 'json',
+        success: function(data)
+        {
+          console.log(data);
+          data.forEach(function(object){
+            hrates.push(object['heart_rate'])
+          });
+          console.log(hrates);
+        },
+        error: function(json) {
+          alert("ajax error")
+        }
+    });
+    $.ajax({
+        type: 'GET',
+        url: '/weights',
+        dataType : 'json',
+        success: function(data)
+        {
+          data.forEach(function(object){
+            weights.push(object['weight'])
+          });
+          console.log(exercises);
+        },
+        error: function(json) {
+          alert("ajax error")
+        }
+    });
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,6 +84,7 @@
     4. 'navbar-fixed'     - Fixed navbar
   -->
     <body class="navbar-fixed sidebar-nav fixed-nav">
+
         <header class="navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">&#9776;</button>
@@ -588,20 +642,17 @@
                         <div class="card-block">
                             <div class="row">
                                 <div class="col-xs-5">
-                                    <h4 class="card-title">Traffic</h4>
+                                    <h4 class="card-title" >Weight and Heart Rate</h4>
                                     <div class="small text-muted" style="margin-top:-10px;">November 2015</div>
                                 </div>
                                 <div class="col-xs-7">
                                     <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
                                         <div class="btn-group" data-toggle="buttons" aria-label="First group">
                                             <label class="btn btn-sm btn-secondary-outline">
-                                                <input type="radio" name="options" id="option1"> Day
+                                               <div id="show_weight"> Weight </div>
                                             </label>
                                             <label class="btn btn-sm btn-secondary-outline active">
-                                                <input type="radio" name="options" id="option2" checked> Month
-                                            </label>
-                                            <label class="btn btn-sm btn-secondary-outline">
-                                                <input type="radio" name="options" id="option3"> Year
+                                                <div id="show_hr">Heart Rate </div>
                                             </label>
                                         </div>
                                         <div class="btn-group hidden-sm-down" role="group" aria-label="Second group">
@@ -610,8 +661,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="chart-wrapper" style="height:300px;margin-top:40px;">
+                            <div id="chart-wrapper_weight" style="height:300px;margin-top:40px;">
                                 <canvas id="main-chart" height="300"></canvas>
+                            </div>
+                            <div id="chart-wrapper_hr" style="height:300px;margin-top:40px;">
+                            <canvas id="main-chart_hr" height="300"></canvas>
                             </div>
                         </div>
                         <div class="card-footer">

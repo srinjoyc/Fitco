@@ -1,13 +1,13 @@
 
 $( document ).ready(function(){
   // Initialize an OpenTok Session object
-  var session = TB.initSession(sessionId);
+  var session = OT.initSession(sessionId);
   var drake = dragula();
   var resize_counter = 0;
   var subscriber;
 
   // Initialize a Publisher, and place it into the element with id="publisher"
-  var publisher = TB.initPublisher(apiKey, 'small-video', {width: '100%', height: '100%'});
+  var publisher = OT.initPublisher(apiKey, 'small-video', {width: '100%', height: '100%'});
   // Attach event handlers
   $("#resize").click( function resizePublisher(){
       resize_counter += 1;
@@ -25,10 +25,10 @@ $( document ).ready(function(){
     });
 
   $("#add-exercise").click(function (e) {
-    e.preventDefault();
-      var name = $("#name").text();
-      var metric = $("#metric").text();
-      var description = $("#description").text();
+      var name = $("#ex-name").val();
+      var metric = $("#ex-metric").val();
+      var description = $("#ex-description").val();
+      e.preventDefault();
     $.ajax({
         type: 'POST',
         url: '/exercises',
@@ -88,11 +88,13 @@ $( document ).ready(function(){
 
 // Text chat
 var form = document.querySelector('#chat-entry');
+var cards = document.querySelector('#cards');
 var msgTxt = document.querySelector('#msgTxt');
 
 // Send a signal once the user enters data in the form
 form.addEventListener('submit', function(event) {
   event.preventDefault();
+
       session.signal({
           type: 'msg',
           data: msgTxt.value

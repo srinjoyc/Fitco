@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
 
 
+  resources :hrates
+  resources :weights
   get 'sessions/new'
 
 

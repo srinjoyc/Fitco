@@ -1,10 +1,10 @@
-<script src="https://static.opentok.com/v2.6/js/opentok.min.js"></script>
+<script src="https://static.opentok.com/v2.8/js/opentok.min.js"></script>
 <script type="text/javascript">
   var apiKey = '<%= @video_session.api_key %>';
   var sessionId = '<%= @video_session.session_id %>';
   var token = '<%= @video_session.token %>';
+  console.log('YOUR TOKEN IS:' + token)
 </script>
-<script src="/assets/dragula.js"></script>
 <link href="/assets/videos.css" rel="stylesheet">
 
 <h2>Nav</h2>
@@ -42,15 +42,15 @@
           <form action="post" name="add-exercise" >
             <div class="input-group input-group-sm">
               <span class="input-group-addon" id="name">Name</span>
-              <input id="name" type="text" class="form-control" placeholder="Exercise Name">
+              <input id="ex-name" type="text" class="form-control" placeholder="Exercise Name">
             </div>
             <div class="input-group input-group-sm">
               <span class="input-group-addon" id="sizing-addon2">Metric</span>
-              <input id="metric" type="text" class="form-control" placeholder="Reps,Weight,Time" aria-describedby="sizing-addon1">
+              <input id="ex-metric" type="text" class="form-control" placeholder="Reps,Weight,Time" aria-describedby="sizing-addon1">
             </div>
             <div class="input-group-sm">
               <span class="input-group-addon" id="sizing-addon2">Description</span>
-              <textarea id="description" name="Text1" cols="19" rows="5"></textarea>
+              <textarea id="ex-description" name="Text1" cols="19" rows="5"></textarea>
             </div>
             <div class="submit-exercise-button">
               <input id="add-exercise" type="submit" name="add-exercise" value="Click!"/> 
