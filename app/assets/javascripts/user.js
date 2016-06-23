@@ -12,7 +12,7 @@ var handlers = {
       success: function(data){
         event.preventDefault()
         console.log("success");
-        $("#workouts").append(data);
+        $(data).insertAfter("#workouts");
         // handlers.showWorkout(data);
       },
       error: function(){

@@ -4943,13 +4943,17 @@ header.navbar {
   header.navbar a.navbar-brand {
     display: inline-block;
     width: 200px;
-    height: 55px;
+    height: 50px;
     padding: 0 1rem;
-    background-color: #141519;
-    background-image: url("../img/logo-light.png");
+    background-color: #000000;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 70px auto; }
+    background-size: 70px auto; 
+    text-align:center;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    }
+
 
 header.navbar .navbar-brand {
   margin-right: 0; }
@@ -4963,12 +4967,14 @@ header.navbar .navbar-nav .nav-link {
   padding-bottom: 0; }
 
 .navbar-brand {
-  color: rgba(0, 0, 0, 0.8); }
+  color: #ffffff; }
   .navbar-brand:focus, .navbar-brand:hover {
-    color: rgba(0, 0, 0, 0.8); }
+    color: #32cd32; }
 
 .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.3); }
+  color: #fcf8e3;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px; }
   .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
     color: rgba(0, 0, 0, 0.6); }
 .navbar-nav .open > .nav-link, .navbar-nav .open > .nav-link:focus, .navbar-nav .open > .nav-link:hover,
@@ -5004,8 +5010,8 @@ header.navbar .navbar-nav .nav-link {
 
 @font-face {
   font-family: "simple-line-icons";
-  src: url("../fonts/Simple-Line-Icons.eot?v=2.3.1");
-  src: url("../fonts/Simple-Line-Icons.eot?v=2.3.1#iefix") format("embedded-opentype"), url("../fonts/Simple-Line-Icons.woff2?v=2.3.1") format("woff2"), url("../fonts/Simple-Line-Icons.woff?v=2.3.1") format("woff"), url("../fonts/Simple-Line-Icons.ttf?v=2.3.1") format("truetype"), url("../fonts/Simple-Line-Icons.svg?v=2.3.1#simple-line-icons") format("svg");
+  src: url("/fonts/Simple-Line-Icons.eot?v=2.3.1");
+  src: url("/fonts/Simple-Line-Icons.eot?v=2.3.1#iefix") format("embedded-opentype"), url("/fonts/Simple-Line-Icons.woff2?v=2.3.1") format("woff2"), url("/fonts/Simple-Line-Icons.woff?v=2.3.1") format("woff"), url("/fonts/Simple-Line-Icons.ttf?v=2.3.1") format("truetype"), url("/fonts/Simple-Line-Icons.svg?v=2.3.1#simple-line-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 .icon-user, .icon-people, .icon-user-female, .icon-user-follow, .icon-user-following, .icon-user-unfollow, .icon-login, .icon-logout, .icon-emotsmile, .icon-phone, .icon-call-end, .icon-call-in, .icon-call-out, .icon-map, .icon-location-pin, .icon-direction, .icon-directions, .icon-compass, .icon-layers, .icon-menu, .icon-list, .icon-options-vertical, .icon-options, .icon-arrow-down, .icon-arrow-left, .icon-arrow-right, .icon-arrow-up, .icon-arrow-up-circle, .icon-arrow-left-circle, .icon-arrow-right-circle, .icon-arrow-down-circle, .icon-check, .icon-clock, .icon-plus, .icon-minus, .icon-close, .icon-organization, .icon-trophy, .icon-screen-smartphone, .icon-screen-desktop, .icon-plane, .icon-notebook, .icon-mustache, .icon-mouse, .icon-magnet, .icon-energy, .icon-disc, .icon-cursor, .icon-cursor-move, .icon-crop, .icon-chemistry, .icon-speedometer, .icon-shield, .icon-screen-tablet, .icon-magic-wand, .icon-hourglass, .icon-graduation, .icon-ghost, .icon-game-controller, .icon-fire, .icon-eyeglass, .icon-envelope-open, .icon-envelope-letter, .icon-bell, .icon-badge, .icon-anchor, .icon-wallet, .icon-vector, .icon-speech, .icon-puzzle, .icon-printer, .icon-present, .icon-playlist, .icon-pin, .icon-picture, .icon-handbag, .icon-globe-alt, .icon-globe, .icon-folder-alt, .icon-folder, .icon-film, .icon-feed, .icon-drop, .icon-drawer, .icon-docs, .icon-doc, .icon-diamond, .icon-cup, .icon-calculator, .icon-bubbles, .icon-briefcase, .icon-book-open, .icon-basket-loaded, .icon-basket, .icon-bag, .icon-action-undo, .icon-action-redo, .icon-wrench, .icon-umbrella, .icon-trash, .icon-tag, .icon-support, .icon-frame, .icon-size-fullscreen, .icon-size-actual, .icon-shuffle, .icon-share-alt, .icon-share, .icon-rocket, .icon-question, .icon-pie-chart, .icon-pencil, .icon-note, .icon-loop, .icon-home, .icon-grid, .icon-graph, .icon-microphone, .icon-music-tone-alt, .icon-music-tone, .icon-earphones-alt, .icon-earphones, .icon-equalizer, .icon-like, .icon-dislike, .icon-control-start, .icon-control-rewind, .icon-control-play, .icon-control-pause, .icon-control-forward, .icon-control-end, .icon-volume-1, .icon-volume-2, .icon-volume-off, .icon-calendar, .icon-bulb, .icon-chart, .icon-ban, .icon-bubble, .icon-camrecorder, .icon-camera, .icon-cloud-download, .icon-cloud-upload, .icon-envelope, .icon-eye, .icon-flag, .icon-heart, .icon-info, .icon-key, .icon-link, .icon-lock, .icon-lock-open, .icon-magnifier, .icon-magnifier-add, .icon-magnifier-remove, .icon-paper-clip, .icon-paper-plane, .icon-power, .icon-refresh, .icon-reload, .icon-settings, .icon-star, .icon-symbol-female, .icon-symbol-male, .icon-target, .icon-credit-card, .icon-paypal, .icon-social-tumblr, .icon-social-twitter, .icon-social-facebook, .icon-social-instagram, .icon-social-linkedin, .icon-social-pinterest, .icon-social-github, .icon-social-google, .icon-social-reddit, .icon-social-skype, .icon-social-dribbble, .icon-social-behance, .icon-social-foursqare, .icon-social-soundcloud, .icon-social-spotify, .icon-social-stumbleupon, .icon-social-youtube, .icon-social-dropbox {
@@ -5583,8 +5589,8 @@ header.navbar .navbar-nav .nav-link {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
