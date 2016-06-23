@@ -1,5 +1,6 @@
 class ExercisesController < ApplicationController
   before_action :set_exercise, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
 
   # GET /exercises
   # GET /exercises.json
@@ -24,7 +25,11 @@ class ExercisesController < ApplicationController
   # POST /exercises
   # POST /exercises.json
   def create
-    @exercise = Exercise.new(exercise_params)
+    @exercise = Exercise.create(appointment_id: params['appointment_id'], 
+                                users_id: params['user_id'], 
+                                name: params['name'], 
+                                metric: params['metric'], 
+                                description: params['description'])
 
     respond_to do |format|
       if @exercise.save

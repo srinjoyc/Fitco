@@ -4,34 +4,74 @@
 	border: 0px;
 }
 
-
-.row {
-	height: 400px;
-}
-
-.col-sm-4 {
-	height: inherit;
-	padding: 0px;
-}
-
-.col-sm-8 {
-	height: inherit;
+.container-fluid{
+	height: 900px;
+	margin:25px;
+	padding: 2px;
 	border: 2px solid black;
 }
 
-#publisher{
+.col-sm-9 {
 	height: inherit;
-	width: inherit;
+	padding: 0px;
+	border: 2px solid black;
 }
 
-#subscribers{
+.col-sm-3 {
+	height: inherit;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.small-video-container{
+	height: 250px;
+	width: 250px;
+	border: 2px solid black;
+	display: inline-block;
+}
+
+.large-video-container{
 	height: inherit;
 	width: 100%;
+	border: 2px solid black;
+}
+#large-video{
+	height: inherit;
+}
+.chatbox-heading{
+	height: 50px;
+	border: 2px solid green;
+	display: inline-block;
 }
 
-#left1{
+.chat-box{
+	height: 500px;
 	border: 2px solid green;
+	display: inline-block;
 }
-#right1{
+
+#history{
+	height: inherit;
+	overflow: auto;
+}
+.type-box{
+	height: 50px;
 	border: 2px solid green;
+	display: inline-block;
+}
+
+.exercise-container{
+	height: 400px;
+	width: 100%;
+	margin: 25px;
+	border: 2px solid black;
+}
+.exercise-inputs{
+	height: 300px;
+	width: 200px;
+	border: 2px solid black;
+}
+
+#description{
+	height: 100px;
 }

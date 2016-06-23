@@ -8,25 +8,73 @@
 <link href="/assets/videos.css" rel="stylesheet">
 
 <h2>Nav</h2>
-
-<div class="container-fluid"> 
-  <div class="row">
-    <div class="col-sm-4">
-      <div id="publisher"></div>
-    </div>
-    <div class="col-sm-8">
-      <div id='left1' class='container'>
-        <div>Move me, but you can only drop me in one of these containers.</div>
-        <div>If you try to drop me somewhere other than these containers, I'll just come back.</div>
-        <div>Item 6.</div>
+<section class="video-chat">
+  <div class="container-fluid"> 
+    <div class="col-sm-9">
+      <div class="large-video-container">
+        <div id="large-video"></div>
       </div>
-      <div id='right1' class='container'>
-        <div>You can drop me in the left container, otherwise I'll stay here.</div>
-        <div>Item 4.</div>
-        <div>Item 5.</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="small-video-container">
+        <div id="small-video"></div>
+      </div>
+      <div class="chat-box-heading">
+        <h3> Chat </h3>
+      </div>
+      <div class="chat-box">
+        <div id="history"></div>
+        <div class="type-box">
+          <form id="chat-entry">
+           <input type="text" placeholder="Input your text here" id="msgTxt"></input>
+           <button value="submit" class="btn-success">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+</section>
+<section class="exercises">
+  <div class ="col-sm-12">
+    <div class="exercise-container">
+      <div class="col-sm-4">
+        <div class="exercise-inputs">
+          <form action="post" name="add-exercise" >
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="name">Name</span>
+              <input id="name" type="text" class="form-control" placeholder="Exercise Name">
+            </div>
+            <div class="input-group input-group-sm">
+              <span class="input-group-addon" id="sizing-addon2">Metric</span>
+              <input id="metric" type="text" class="form-control" placeholder="Reps,Weight,Time" aria-describedby="sizing-addon1">
+            </div>
+            <div class="input-group-sm">
+              <span class="input-group-addon" id="sizing-addon2">Description</span>
+              <textarea id="description" name="Text1" cols="19" rows="5"></textarea>
+            </div>
+            <div class="submit-exercise-button">
+              <input id="add-exercise" type="submit" name="add-exercise" value="Click!"/> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <button id="resize"> Resize</button>
   <div class="row">
     <div class="col-sm-4">
       <div id="subscribers"></div>
@@ -41,4 +89,4 @@
        </div>
     </div>
   </div>
-</div>
+</div> -->
