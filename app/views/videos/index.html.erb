@@ -1,3 +1,4 @@
+
 <script src="https://static.opentok.com/v2.8/js/opentok.min.js"></script>
 <script type="text/javascript">
   var apiKey = '<%= @video_session.api_key %>';
@@ -7,72 +8,115 @@
 </script>
 <link href="/assets/videos.css" rel="stylesheet">
 
-<h2>Nav</h2>
-<section class="video-chat">
-  <div class="container-fluid"> 
-    <div class="col-sm-9">
-      <div class="large-video-container">
-        <div id="large-video"></div>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Video Page</title>
+  
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="https://static.opentok.com/v2.6/js/opentok.min.js"></script>
+    <script type="text/javascript">
+      var apiKey = '<%= @video_session.api_key %>';
+      var sessionId = '<%= @video_session.session_id %>';
+      var token = '<%= @video_session.token %>';
+    </script>
+    <script src="/assets/dragula.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="videoo">
+
+  <div class="brand">GETFIT</div>
+  <div class="address-bar">Video Appointment</div>
+
+  <section class="video-chat">
+    <div class="container-fluid"> 
+      <div class="col-sm-9">
+        <div class="large-video-container">
+          <div id="large-video"></div>
+        </div>
       </div>
-    </div>
     <div class="col-sm-3">
       <div class="small-video-container">
         <div id="small-video"></div>
       </div>
-      <div class="chat-box-heading">
-        <h3> Chat </h3>
+      
+      <div>
+        <h3 id="chatheading">Chatbox</h3>
       </div>
+
       <div class="chat-box">
         <div id="history"></div>
-        <div class="type-box">
-          <form id="chat-entry">
-           <input type="text" placeholder="Input your text here" id="msgTxt"></input>
-           <button value="submit" class="btn-success">Submit</button>
-          </form>
+          <div class="type-box">
+            <form id="chat-entry">
+              <input type="text" placeholder="Input your text here" id="msgTxt"></input>
+              <button id="submit" value="submit" class="btn btn-default btn-sm">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </section>
+
 <section class="exercises">
-  <div class ="col-sm-12">
-    <div class="exercise-container">
-      <div class="col-sm-4">
-        <div class="exercise-inputs">
-          <form action="post" name="add-exercise" >
-            <div class="input-group input-group-sm">
-              <span class="input-group-addon" id="name">Name</span>
-              <input id="ex-name" type="text" class="form-control" placeholder="Exercise Name">
-            </div>
-            <div class="input-group input-group-sm">
-              <span class="input-group-addon" id="sizing-addon2">Metric</span>
-              <input id="ex-metric" type="text" class="form-control" placeholder="Reps,Weight,Time" aria-describedby="sizing-addon1">
-            </div>
-            <div class="input-group-sm">
-              <span class="input-group-addon" id="sizing-addon2">Description</span>
-              <textarea id="ex-description" name="Text1" cols="19" rows="5"></textarea>
-            </div>
-            <div class="submit-exercise-button">
-              <input id="add-exercise" type="submit" name="add-exercise" value="Click!"/> 
-            </div>
-          </form>
+  <div class="container-fluid">  
+    <div class ="col-sm-12">
+      <div class="exercise-container">
+        <div class="col-sm-4">
+          <div class="exercise-inputs">
+            <form action="post" name="add-exercise" >
+              <div class="input-group input-group-sm">
+                <span class="input-group-addon" id="name">Name</span>
+                <input id="name" type="text" class="form-control" placeholder="Exercise Name">
+              </div>
+              <div class="input-group input-group-sm">
+                <span class="input-group-addon" id="sizing-addon2">Metric</span>
+                <input id="metric" type="text" class="form-control" placeholder="Reps,Weight,Time" aria-describedby="sizing-addon1">
+              </div>
+              <div class="input-group-sm">
+                <span class="input-group-addon" id="sizing-addon2">Description</span>
+                <textarea id="description" name="Text1" cols="19" rows="5" placeholder="Enter Description"></textarea>
+              </div>
+              <div class="submit-exercise-button">
+                <input class="btn btn-default btn-sm" id="add-exercise" type="submit" name="add-exercise" value="Submit"/> 
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
+​
 <!-- 
     <button id="resize"> Resize</button>
   <div class="row">

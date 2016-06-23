@@ -715,13 +715,14 @@
                         </div>
                     </div>
                     <!--/.card--> <!--appointment_cards_here -->
-                    <%= @
+                   <% @appointments.each do |appointment| %>
                     <div class="card card-block">
                       <h4 class="card-title">Appointment: <%=Schedule.stringify([DateTime.now().hour])[0]%></h4>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
+                      <a href="/videos/1130" class="card-link">Video Link</a>
                       <a href="#" class="card-link">Another link</a>
                     </div>
+                    <%end%>
 
 
         </main>
