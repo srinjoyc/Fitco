@@ -10,7 +10,7 @@ $(function (){
                 borderColor : 'rgba(220,220,220,1)',
                 pointBackgroundColor : 'rgba(220,220,220,1)',
                 pointBorderColor : '#fff',
-                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                data : [3, 10, 4, 5, 7, 8, 1]
             },
             {
                 label: 'My Second dataset',
@@ -18,7 +18,7 @@ $(function (){
                 borderColor : 'rgba(151,187,205,1)',
                 pointBackgroundColor : 'rgba(151,187,205,1)',
                 pointBorderColor : '#fff',
-                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                data : [3, 10, 4, 5, 7, 8, 1]
             }
         ]
     }

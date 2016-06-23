@@ -8066,21 +8066,21 @@ header.navbar .navbar-nav .nav-link {
 
   .daterangepicker .calendar.left {
     clear: none; } }
-/*.toast-title {
+.toast-title {
   font-weight: bold; }
-*/
-/*.toast-message {
+
+.toast-message {
   -ms-word-wrap: break-word;
   word-wrap: break-word; }
-*/
-/*.toast-message a,
+
+.toast-message a,
 .toast-message label {
   color: #fff; }
 
 .toast-message a:hover {
   color: #cccccc;
-  text-decoration: none; }*/
-/*
+  text-decoration: none; }
+
 .toast-close-button {
   position: relative;
   right: -0.3em;
@@ -8107,7 +8107,7 @@ header.navbar .navbar-nav .nav-link {
 /*Additional properties for button version
 iOS requires the button element instead of an anchor tag.
 If you want the anchor version, it requires `href="#"`.*/
-/*/*button.toast-close-button {
+button.toast-close-button {
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -8154,7 +8154,7 @@ If you want the anchor version, it requires `href="#"`.*/
   position: fixed;
   z-index: 999999;
   /*overrides*/ }
-/*
+/**/*/
 #toast-container * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -8238,7 +8238,7 @@ If you want the anchor version, it requires `href="#"`.*/
   filter: alpha(opacity=20); }
 
 /*Animations*/
-/*.toast {
+.toast {
   opacity: 1 !important; }
 
 .toast.ng-enter {
@@ -8256,7 +8256,7 @@ If you want the anchor version, it requires `href="#"`.*/
   opacity: 0 !important; }
 
 /*Responsive Design*/
-/*@media all and (max-width: 240px) {
+@media all and (max-width: 240px) {
   #toast-container > div {
     padding: 8px 8px 8px 50px;
     width: 11em; }
@@ -8366,7 +8366,7 @@ div.dataTables_scrollFoot table {
 /*
  * TableTools styles
  */
-/*
+
 .table tbody tr.active td, .table tbody tr.active th {
     background-color: #08C;
     color: white;
@@ -8377,7 +8377,7 @@ div.dataTables_scrollFoot table {
 .table-striped tbody tr.active:nth-child(odd) td, .table-striped tbody tr.active:nth-child(odd) th {
     background-color: #017ebc;
 }
-*/
+
 table.DTTT_selectable tbody tr {
   cursor: pointer; }
 

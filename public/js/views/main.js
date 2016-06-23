@@ -1,9 +1,9 @@
 $(function(){
 
-    toastr.info('Bootstrap 4 on steroids', 'Welcome to ROOT Admin', {
-        closeButton: true,
-        progressBar: true,
-    });
+    // toastr.info('Bootstrap 4 on steroids', 'Welcome to ROOT Admin', {
+    //     closeButton: true,
+    //     progressBar: true,
+    // });
 
     $('input[name="daterange"]').daterangepicker({
         opens: 'left',
@@ -233,15 +233,10 @@ $(function(){
 
     //Main Chart
     var elements = 27;
-    var data1 = [];
-    var data2 = [];
-    var data3 = [];
+    var data1 = [34, 12, 45, 12];
+    var data2 = [34, 12, 45, 12];
+    var data3 = [34, 12, 45, 12];
 
-    for (var i = 0; i <= elements; i++) {
-        data1.push(random(50,200));
-        data2.push(random(80,100));
-        data3.push(65);
-    }
 
     var data = {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
