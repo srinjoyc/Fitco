@@ -13317,7 +13317,7 @@ body:not(.top-nav) .sidebar {
   height: 100%;
   padding: 0;
   color: #fff;
-  background: #2a2c36; }
+  background: #000000; }
   body:not(.top-nav) .sidebar .sidebar-close {
     position: absolute;
     right: 0;
@@ -13335,7 +13335,7 @@ body:not(.top-nav) .sidebar {
   body:not(.top-nav) .sidebar .sidebar-header {
     padding-bottom: 10px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.2); }
+    background: #000000; }
     body:not(.top-nav) .sidebar .sidebar-header .img-avatar {
       width: 80px;
       margin: 20px auto 10px;
@@ -13354,10 +13354,10 @@ body:not(.top-nav) .sidebar {
     overflow: auto; }
   body:not(.top-nav) .sidebar ul.nav li.nav-title {
     padding: 0.75rem 1rem;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 1.3125rem;
-    color: #d1d4d7;
+    color: #38e212;
     text-transform: uppercase; }
   body:not(.top-nav) .sidebar ul.nav li.divider {
     height: 10px; }
@@ -13517,7 +13517,7 @@ body:not(.top-nav) .sidebar {
     body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item {
       border-left: 0 !important; }
       body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item ul {
-        background: #2a2c36; }
+        background: #000000; }
       body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link {
         position: relative;
         width: 50px;
@@ -13545,7 +13545,7 @@ body:not(.top-nav) .sidebar {
           display: none; }
         body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover {
           width: 200px;
-          background: #20a8d8 !important;
+          background: #000000 !important;
           color: #fff !important; }
           body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover.nav-dropdown-toggle, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item a.nav-link:hover.nav-dropdown-toggle.active {
             background: #20a8d8 !important;
@@ -13566,7 +13566,7 @@ body:not(.top-nav) .sidebar {
             top: 0;
             left: 100%; }
       body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open {
-        background: #20a8d8 !important;
+        background: #000000 !important;
         color: #fff !important; }
         body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ul, body.sidebar-nav.compact-nav .sidebar ul.nav li.nav-item.nav-dropdown.open > ol {
           display: none; }

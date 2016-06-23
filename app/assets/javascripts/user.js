@@ -3,7 +3,6 @@ $(function() {
 
 var handlers = {
   showWorkout: function(){
-    console.log("werkwerk");
 
     $.ajax({
       method: 'GET',
@@ -13,6 +12,26 @@ var handlers = {
         event.preventDefault()
         console.log("success");
         $(data).insertAfter("#workouts");
+        $(this).remove()
+        // handlers.showWorkout(data);
+      },
+      error: function(){
+        alert("error");
+        console.log("error")
+      }
+    })
+  },
+  hieWorkout: function(){
+
+    $.ajax({
+      method: 'GET',
+      dataType: 'HTML',
+      url: '/exercises',
+      success: function(data){
+        event.preventDefault()
+        console.log("success");
+        $(data).insertAfter("#workouts");
+        $(this).remove()
         // handlers.showWorkout(data);
       },
       error: function(){
@@ -60,4 +79,7 @@ var handlers = {
   $('#trainerinterface').on('click', handlers.editUser);
   // $('#userprofile').on('click', handlers.showUser)
   $('#workouts').on('click', handlers.showWorkout);
+  $('#workouts').on('click', function(){
+    $(data).remove();
+  });
 });
