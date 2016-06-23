@@ -298,14 +298,10 @@ hr {
 }
 
 .input-group-addon,
-#ex-description,
+#description,
 .input-group input{
 
     background: rgba(0,0,0,.4);
     display: inline-block;
     color: white;
-}
-
-#description{
-	height: 100px;
 }
