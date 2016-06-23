@@ -1,22 +1,59 @@
+<style>
+tr:nth-child(even){
+	background-color:#C8D4CC
+}
 
- <h1> Hi </h1>
- <%= @schedule.time %>
+tr:hover {
+	background-color: red;
+}
 
- .hero__layout > .site__centered{
-    background-color: black;
-    opacity: 0.8;
-    width: 100%;
- }
+</style>
+<script>
+$(function () {
+    $(".bookableHour").on('click', function () {
+        var bookedTime = $(this).text();
+        $.ajax({
+        		type: 'POST',
+            url: '/appointments',
+            dataType : 'json',
+            data: {
+                time: bookedTime.charAt(1), //need to pass hour, char(0) is whitespace 
+                trainer_id: 1, //TODO replace with value of trainer:id
+                user_id: 1, //current user 
+            },
+            success: function(json)
+            {
+            	alert(json)
+            },
+            error: function(json) {
+            	alert("ajax error")
+            }
+        });
+    });
+});
 
- .time-schedule__place {
-  margin-top: 25px;
-  font-size: 18px;
- }
-
- hero hero-full__schedule{
-  height: 90px;
- }
-
- .schedule__info > .btn btn_7 {
-  display:none;
- }
+</script>
+<div class="container">
+	<div class="table-responsive">
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th>Today's Available Times</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		  <% @hours.each_with_index do |hour, index| %>
+		    <% if (index%2 != 0) %>
+		    <tr>
+		      <td class="bookableHour"> <%= hour %> </td>
+		    </tr>
+		    <% else %>
+		    <tr>
+		      <td class="bookableHour"> <%= hour %> </td>
+		      <% end %>
+		    </tr>
+		   <% end %>
+		  </tbody>
+		</table>
+	</div>
+</div>

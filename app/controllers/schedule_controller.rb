@@ -1,10 +1,16 @@
 class ScheduleController < ApplicationController
   before_action :set_schedule, only: [:show, :edit, :update, :destroy]
-
+  skip_before_action :verify_authenticity_token
   # GET /schedules
   # GET /schedules.json
   def index
-    @schedule = Schedule.first
+    @schedule = Schedule.where("time < ?", DateTime.now )
+    @available_hours = []
+    @schedule.each do |time|
+      hour = time[:time]
+      @available_hours.push(hour)
+    end 
+    @hours = Schedule.getTimeSlots(@available_hours)
   end
 
   # GET /schedules/1
