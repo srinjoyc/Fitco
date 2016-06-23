@@ -42,7 +42,7 @@ $( document ).ready(function(){
         },
         success: function(json)
         {
-          alert(json)
+          alert(json);
         },
         error: function(json) {
           alert("ajax error")

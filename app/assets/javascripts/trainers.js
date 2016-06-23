@@ -1,7 +1,6 @@
 $(function() {
   var handlers = {
     showTrainer: function(trainers){
-      console.log("something");
       var table = $('#trainers').find('tbody').empty();
       var fields = ["firstname", "lastname", "gender", "description", "email", "phone", "image"];
       $('#trainerForm').hide();
