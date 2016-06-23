@@ -1,0 +1,27 @@
+
+<%= form_for :user, url:user_path(@user), :method=>:patch do |f| %>
+
+  <%= f.label :age, "Age" %>
+  <%= f.text_field :age, class: "extraInfo" %> <br />
+
+  <%= f.label :weight, "Weight" %>
+  <%= f.text_field :weight, class: "extraInfo" %> <br />
+
+  <%= f.label :height, "Height" %>
+  <%= f.text_field :height, class: "extraInfo" %> <br />
+
+  <%= f.label :workoutgoals, "Workout Goals" %>
+  <%= f.text_field :workoutgoals, class: "extraInfo" %> <br />
+
+  <%= f.label :workouthistory, "Workout History" %>
+  <%= f.text_field :workouthistory, class: "extraInfo" %> <br />
+
+  <%= f.label :idealweight, "Ideal Weight" %>
+  <%= f.text_field :idealweight, class: "extraInfo" %> <br />
+
+  <%= f.label :image_url, "Image URL" %>
+  <%= f.text_field :image_url, class: "extraInfo" %> <br />
+
+  <%= f.submit "Submit Info", id: "submit" %>
+
+<% end %>

@@ -13,7 +13,12 @@
  *= require videos.css
  *= require dragula.css
  *= require_self
- */
+ *= require userdash.css
+ *= require users.css
+
+
+//bootstrap css for users dashboard
+
 
 #results, #search, #trainerForm {display: none;}
 

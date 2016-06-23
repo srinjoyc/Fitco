@@ -1,0 +1,14 @@
+/** {
+  color: navy;
+}
+
+.welcome {
+  color:blue;
+  display:inline-block;
+}*/
+img #profilepic {
+  width:30px;
+  height:30px;
+  display:inline-block;
+
+}

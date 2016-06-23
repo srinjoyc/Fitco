@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160621222855) do
+ActiveRecord::Schema.define(version: 20160622054422) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,10 @@ ActiveRecord::Schema.define(version: 20160621222855) do
     t.text     "name"
     t.string   "metric"
     t.text     "description"
+    t.integer  "user_id"
   end
+
+  add_index "exercises", ["user_id"], name: "index_exercises_on_user_id", using: :btree
 
   create_table "schedules", force: :cascade do |t|
     t.datetime "time"
@@ -54,13 +57,19 @@ ActiveRecord::Schema.define(version: 20160621222855) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.string   "firstname"
     t.string   "lastname"
-    t.string   "email"
-    t.string   "password"
-    t.time     "timestamps"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "workouthistory"
+    t.string   "workoutgoals"
+    t.integer  "age"
+    t.integer  "weight"
+    t.decimal  "height"
+    t.integer  "idealweight"
+    t.string   "image_url"
   end
 
   create_table "videos", force: :cascade do |t|
@@ -68,4 +77,3 @@ ActiveRecord::Schema.define(version: 20160621222855) do
     t.datetime "updated_at", null: false
   end
 
-end

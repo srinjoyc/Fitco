@@ -1,4 +1,0 @@
-class SubcribedUser < User
-
-
-end

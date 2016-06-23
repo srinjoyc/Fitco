@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>getFit</title>
+    <%= stylesheet_link_tag    'home', media: 'all', 'data-turbolinks-track' => true %>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>getFit
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Signup</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download" data-toggle="modal" data-target="#signupModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                     <!--  <div algin="center" class="embed-responsive embed-responsive-16by9">
+                        <video autoplay loop class="embed-responsive-item" type="video/mp4">
+                          <source src="/videos/homepage_video.mp4">
+                        </video>
+                      </div> -->
+                       <h1 class="brand-heading">getFit</h1>
+                        <p class="intro-text">Live, Personalized, Professional<br>Fitness Coaching Platform.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="hovereffect">
+            <img class="img-responsive" src="https://static.pexels.com/photos/9806/pexels-photo-large.jpg" alt="">
+              <div class="overlay">
+                  <h2>GAIN instant access to our top-notch, fully-accredited trainers who will strive to help you reach your goals</h2>
+                  
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-6">
+          <div class="hovereffect">
+            <img class="img-responsive" src="https://static.pexels.com/photos/4077/healthy-person-woman-sport-large.jpg" alt="">
+              <div class="overlay">
+                  <h2>we provide fully customized workout plans for clients of all backgrounds and levels</h2>
+                  <p> 
+                  <a href="#"></a>
+                  </p> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="hovereffect">
+            <img class="img-responsive" src="https://static.pexels.com/photos/36776/fitness-strength-strong-male-large.jpg" alt="">
+              <div class="overlay">
+                  <h2>Save money and time by signing up with getFit today. Video chat with a trainer of your picking. We have trainers of all backgrounds to suit your individual needs</h2>
+                  <!-- <p> 
+                  <a href="#"></a>
+                  </p> --> 
+              </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-6">
+          <div class="hovereffect">
+            <img class="img-responsive" src="https://static.pexels.com/photos/39688/training-train-lime-barbell-39688-large.jpeg" alt="">
+              <div class="overlay">
+                  <h2>Keep track of your progress. Trainers have access to your info to help encourage you along the way</h2>
+                  <!-- <p> 
+                  <a href="#"></a>
+                  </p>  -->
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Sign up today </h2>
+                    <p>Subscribe to obtain personalized workout and meal plans.</p>
+                    <button type="button"  class="btn btn-default btn-lg" data-toggle="modal" data-target="#signupModal">Signup</button>
+                     <button type="button"  class="btn btn-default btn-lg" data-toggle="modal" data-target="#signupModal">Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Please Sign Up</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row-fluid">
+          <div class="span6">
+            <h4>Sign Up info</h4>
+            <%= render '/users/signupform' %></br>
+            <%= render '/users/form' %>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact getFit</h2>
+                <p>Feel free to provide feedback on our website</p>
+                <p><a href="mailto:feedback@getFit.com">feedback@getFit.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/getFit" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://google.com" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; getFit</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/jquery/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/javascripts/grayscale.js"></script>
+    <!-- Custom Fonts -->
+    <link href="/stylesheets/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+</body>
+
+</html>

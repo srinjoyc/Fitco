@@ -21,28 +21,16 @@
 </div>
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
-<div id ="sign up">
 
-<%= form_for :user, class: "signupForm" do |f| %>
+<div id ="sign up"><%= render 'signupform' %></div>
 
-  <%= f.label :firstname %>
-  <%= f.text_field :firstname, class: "shortInput" %> <br />
+<div> <%= render 'form' %> </div>
 
-  <%= f.label :lastname %>
-  <%= f.text_field :lastname, class: "shortInput" %> <br />
-
-  <%= f.label :email, "Email Address" %>
-  <%= f.text_field :email, class: "shortInput" %> <br />
-
-  <%= f.label :password %>
-  <%= f.password_field :password, class: "shortInput" %> <br />
-
-  <%= f.label :password_confirmation, "Confirm Password" %>
-  <%= f.password_field :password_confirmation, class: "shortInput" %> <br />
-
-  <%= f.submit "Create account", class: "button createAccount" %>
-
-<% end %>
-</div>
+  <% if current_user %>
+    Signed in as <strong><%= current_user.firstname %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
 
 
