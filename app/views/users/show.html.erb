@@ -15,7 +15,7 @@
         <meta name="author" content="Lukasz Holeczek">
         <meta name="keyword" content="ROOT Admin - UI Admin Kit Powered by Bootstrap 4">
         <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
-        <title>ROOT Admin - UI Admin Kit</title>
+        <title>getFit</title>
         <!-- Main styles for this application -->
         <%= stylesheet_link_tag    'trainers', media: 'all', 'data-turbolinks-track' => true %>
        
@@ -134,11 +134,7 @@
                         Dashboard
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Update Profile<span class="label label-info">NEW</span></a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Options
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Update Profile</a>
                     </li>
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
@@ -200,53 +196,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> CHARTS</a>
                     </li>
-                    <li class="divider"></li>
-                    <li class="nav-title">
-                        Extras
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> PAGES</a>
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-login.html" target="_top"><i class="icon-star"></i> Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-register.html" target="_top"><i class="icon-star"></i> Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-404.html" target="_top"><i class="icon-star"></i> Error 404</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages-500.html" target="_top"><i class="icon-star"></i> Error 500</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-layers"></i> UI Kits</a>
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item nav-dropdown">
-                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> INVOICING</a>
-                                <ul class="nav-dropdown-items">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-invoicing-invoice.html"><i class="icon-speech"></i> INVOICE</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="nav-dropdown-items">
-                            <li class="nav-item nav-dropdown">
-                                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> EMAIL</a>
-                                <ul class="nav-dropdown-items">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-email-inbox.html"><i class="icon-speech"></i> INBOX</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-email-message.html"><i class="icon-speech"></i> MESSAGE</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="UIkits-email-compose.html"><i class="icon-speech"></i> COMPOSE</a>
-                                    </li>
-                                </ul>
+                        
                             </li>
                         </ul>
                     </li>
@@ -254,68 +204,7 @@
             </nav>
             <div class="sidebar-footer">
                 <ul class="sidebar-footer-menu">
-                    <li>
-                        <div class="btn-group dropup">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="icon-speedometer"></i>
-                                <span>Usage</span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <div class="dropdown-header">Usage <a href="#" class="btn pull-right"><i class="icon-settings"></i></a></div>
-                                <div class="dropdown-item">
-                                    <div class="title">Memory
-                                        <span>2GB of 8GB</span>
-                                    </div>
-                                    <progress class="progress progress-xs progress-success m-b-0" value="25" max="100">25%</progress>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="title">HDD
-                                        <span>750GB of 1TB</span>
-                                    </div>
-                                    <progress class="progress progress-xs progress-warning m-b-0" value="75" max="100">75%</progress>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="title">SSD
-                                        <span>300GB of 1TB</span>
-                                    </div>
-                                    <progress class="progress progress-xs progress-info m-b-0" value="30" max="100">30%</progress>
-                                </div>
-                                <div class="dropdown-item">
-                                    <div class="title">Bandwidth
-                                        <span>50TB of 50TB</span>
-                                    </div>
-                                    <progress class="progress progress-xs progress-danger m-b-0" value="100" max="100">100%</progress>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="btn-group dropup">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="icon-list"></i>
-                                <span>Menu</span>
-                            </button>
-                            <div class="dropdown-menu">
-                                <div class="dropdown-header text-xs-center">
-                                    <strong>Account</strong>
-                                </div>
-                                <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="label label-info">42</span></a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="label label-success">42</span></a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="label label-danger">42</span></a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="label label-warning">42</span></a>
-                                <div class="dropdown-header text-xs-center">
-                                    <strong>Settings</strong>
-                                </div>
-                                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="label label-default">42</span></a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="label label-primary">42</span></a>
-                                <div class="divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
-                            </div>
-                        </div>
-                    </li>
+                    
                     <li class="action">
                         <div class="btn-group dropup">
                             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -406,12 +295,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="terms">
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+               
             </div>
         </div>
         <!-- Main content -->
@@ -585,7 +469,7 @@
                         <div class="card-block">
                             <div class="row">
                                 <div class="col-xs-5">
-                                    <h4 class="card-title">Traffic</h4>
+                                    <h4 class="card-title">Activity</h4>
                                     <div class="small text-muted" style="margin-top:-10px;">November 2015</div>
                                 </div>
                                 <div class="col-xs-7">
@@ -615,13 +499,13 @@
                             <ul>
                                 <li>
                                     <div class="text-muted">Visits</div>
-                                    <strong>29.703 Users (40%)</strong>
-                                    <progress class="progress progress-xs progress-success" value="40" max="100">40%</progress>
+                                    <strong>29.703 Users (56%)</strong>
+                                    <progress class="progress progress-xs progress-success" value="96" max="100">40%</progress>
                                 </li>
                                 <li class="hidden-sm-down">
                                     <div class="text-muted">Unique</div>
                                     <strong>24.093 Unique Users (20%)</strong>
-                                    <progress class="progress progress-xs progress-info" value="20" max="100">20%</progress>
+                                    <progress class="progress progress-xs progress-info" value="0" max="100">20%</progress>
                                 </li>
                                 <li>
                                     <div class="text-muted">Pageviews</div>
@@ -632,11 +516,6 @@
                                     <div class="text-muted">New Users</div>
                                     <strong>22.123 Users (80%)</strong>
                                     <progress class="progress progress-xs progress-danger" value="80" max="100">80%</progress>
-                                </li>
-                                <li class="hidden-sm-down">
-                                    <div class="text-muted">Bounce Rate</div>
-                                    <strong>40.15%</strong>
-                                    <progress class="progress progress-xs progress-primary" value="40" max="100">40%</progress>
                                 </li>
                             </ul>
                         </div>
@@ -1326,11 +1205,9 @@
                         <small class="text-muted"><i class="icon-social-skype"></i>&nbsp; On-line </small>
                     </div>
                     <hr class="transparent m-x-1 m-y-0">
-                    <div class="callout m-a-0 p-y-h text-muted text-xs-center bg-faded text-uppercase">
-                        <small><b>Tomorrow</b></small>
-                    </div>
-                    <hr class="transparent m-x-1 m-y-0">
-                    <div class="callout callout-danger m-a-0 p-y-1">
+                    
+                    <!-- <hr class="transparent m-x-1 m-y-0"> -->
+                    <!-- <div class="callout callout-danger m-a-0 p-y-1">
                         <div>New UI Project -
                             <strong>deadline</strong>
                         </div>
@@ -1353,8 +1230,8 @@
                                 <img src="/images/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             </div>
                         </div>
-                    </div>
-                    <hr class="m-x-1 m-y-0">
+                    </div> -->
+                    <!-- <hr class="m-x-1 m-y-0">
                     <div class="callout callout-success m-a-0 p-y-1">
                         <div>
                             <strong>#10 Startups.Garden</strong> Meetup</div>
@@ -1517,8 +1394,8 @@
                                 <span class="switch-handle"></span>
                             </label>
                         </div>
-                    </div>
-                    <hr>
+                    </div> -->
+                    <!-- <hr>
                     <h6>System Utilization</h6>
                     <div class="text-uppercase m-b-q m-t-2">
                         <small><b>CPU Usage</b></small>
@@ -1540,7 +1417,7 @@
                     </div>
                     <progress class="progress progress-xs progress-success m-a-0" value="10" max="100">10%</progress>
                     <small class="text-muted">25GB/256GB</small>
-                </div>
+                </div> -->
             </div>
         </aside>
        
@@ -1562,7 +1439,7 @@
         <script src="/js/views/main.js"></script>
         
         <!-- Custom scripts required by this view -->
-        
+
 
         
         

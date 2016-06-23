@@ -1,9 +1,9 @@
 $(function(){
 
-    toastr.info('Bootstrap 4 on steroids', 'Welcome to ROOT Admin', {
-        closeButton: true,
-        progressBar: true,
-    });
+    // toastr.info('Bootstrap 4 on steroids', 'Welcome to ROOT Admin', {
+    //     closeButton: true,
+    //     progressBar: true,
+    // });
 
     $('input[name="daterange"]').daterangepicker({
         opens: 'left',

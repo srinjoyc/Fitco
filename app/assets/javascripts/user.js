@@ -20,24 +20,24 @@ var handlers = {
       }
     })
   },
-  hieWorkout: function(){
+  // hieWorkout: function(){
 
-    $.ajax({
-      method: 'GET',
-      dataType: 'HTML',
-      url: '/exercises',
-      success: function(data){
-        event.preventDefault()
-        console.log("success");
-        $(data).insertAfter("#workouts");
-        // handlers.showWorkout(data);
-      },
-      error: function(){
-        alert("error");
-        console.log("error")
-      }
-    })
-  },
+  //   $.ajax({
+  //     method: 'GET',
+  //     dataType: 'HTML',
+  //     url: '/exercises',
+  //     success: function(data){
+  //       event.preventDefault()
+  //       console.log("success");
+  //       $(data).insertAfter("#workouts");
+  //       // handlers.showWorkout(data);
+  //     },
+  //     error: function(){
+  //       alert("error");
+  //       console.log("error")
+  //     }
+  //   })
+  // },
   editUser: function(user){
     console.log("hey");
 
