@@ -10,7 +10,8 @@ class TrainersController < ApplicationController
   # GET /trainers/1
   # GET /trainers/1.json
   def show
-    @trainers = Trainer.find(params[:id])
+    @trainer = Trainer.find(params[:id])
+    @clients = @trainer.users.as_json
   end
 
   # GET /trainers/new

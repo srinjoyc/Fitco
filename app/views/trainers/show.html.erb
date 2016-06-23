@@ -270,31 +270,8 @@
                     <div class="col-md-5 charts">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4">
-                                <div class="chart-wrapper">
-                                    <canvas id="header-chart-1" class="chart" height="70"></canvas>
-                                </div>
-                                <div class="text-xs-center title">
-                                    <span class="text-muted">Weight: </span>
-                                    <strong>203lbs</strong>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="chart-wrapper">
-                                    <canvas id="header-chart-2" class="chart" height="70"></canvas>
-                                </div>
-                                <div class="text-xs-center title">
-                                    <span class="text-muted">Calories: </span>
-                                    <strong class="text-danger">2010</strong>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <div class="chart-wrapper">
-                                    <canvas id="header-chart-3" class="chart" height="70"></canvas>
-                                </div>
-                                <div class="text-xs-center title">
-                                    <span class="text-muted">Body Fat: </span>
-                                    <strong class="text-success">13%</strong>
-                                </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -338,9 +315,7 @@
                             <div class="card card-inverse card-primary">
                                 <div class="card-block p-b-0">
                                     <div class="btn-group pull-right">
-                                        <button type="button" class="btn btn-primary-outline active dropdown-toggle p-a-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="icon-settings"></i>
-                                        </button>
+                                     
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">Action</a>
                                             <a class="dropdown-item" href="#">Another action</a>
@@ -349,8 +324,8 @@
                                             <a class="dropdown-item" href="#">Separated link</a>
                                         </div>
                                     </div>
-                                    <h4 class="m-b-0">9.823</h4>
-                                    <p>Members online</p>
+                                    <h4 class="m-b-0">2</h4>
+                                    <p>Clients</p>
                                 </div>
                                 <div class="chart-wrapper p-x-1">
                                     <canvas id="card-chart1" class="chart" height="70"></canvas>
@@ -364,8 +339,8 @@
                                     <button type="button" class="btn btn-info-outline active p-a-0 pull-right">
                                         <i class="icon-location-pin"></i>
                                     </button>
-                                    <h4 class="m-b-0">9.823</h4>
-                                    <p>Members online</p>
+                                    <h4 class="m-b-0">222</h4>
+                                    <p>Minutes Consulted</p>
                                 </div>
                                 <div class="chart-wrapper p-x-1">
                                     <canvas id="card-chart2" class="chart" height="70"></canvas>
@@ -388,8 +363,8 @@
                                             <a class="dropdown-item" href="#">Separated link</a>
                                         </div>
                                     </div>
-                                    <h4 class="m-b-0">9.823</h4>
-                                    <p>Members online</p>
+                                    <h4 class="m-b-0">9</h4>
+                                    <p>Sessions</p>
                                 </div>
                                 <div class="chart-wrapper">
                                     <canvas id="card-chart3" class="chart" height="70"></canvas>
@@ -412,8 +387,8 @@
                                             <a class="dropdown-item" href="#">Separated link</a>
                                         </div>
                                     </div>
-                                    <h4 class="m-b-0">9.823</h4>
-                                    <p>Members online</p>
+                                    <h4 class="m-b-0">26</h4>
+                                    <p>Days on Fitco</p>
                                 </div>
                                 <div class="chart-wrapper p-x-1">
                                     <div>
@@ -491,82 +466,28 @@
                 <div class="animated fadeIn">
                     <div class="row row-equal">
                         <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-primary">
+                        	<% @clients.each do |client| %>
+                            <div style="margin:25px;height:300px;" class="card card-inverse card-primary pull-left">
                                 <div class="card-block p-b-0">
-                                    <div class="btn-group pull-right">
-                                        
+                                    <div class="btn-group pull-right"></div>
+                                    <h4 class="m-b-0"> <%= client['firstname']%> <%= client['lastname']%></h4>
+                                    <div style="margin:10px; text-align: center;">
+                                    <img style="width:100px;height:100px;" class="img-thumbnail" src="<%= client['image_url']%>">
                                     </div>
-
-                                    <h4 class="m-b-0"> </h4>
-                                    <p>Weight</p>
-                                    <h4 class="m-b-0"></h4>
-                                    <p>Ideal Weight </p>
+                                    <br>
+                                    <div style="text-align: left;">
+                                    	<p><strong>Ideal Weight:</strong><%= client['idealweight']%></p>
+                                    	<p><strong>Current Weight:</strong><%= client['weight']%></p>
+                                    </div>
                                 </div>
                                 <div class="chart-wrapper p-x-1">
                                
                                     <!-- <canvas id="card-chart1" class="chart" height="70"></canvas> -->
                                 </div>
                             </div>
+                            <%end%>
                         </div>
-                        <div class="container-fluid">
-                <div class="animated fadeIn">
-                    <div class="row row-equal">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-primary">
-                                <div class="card-block p-b-0">
-                                    <div class="btn-group pull-right">
-                                        
-                                    </div>
-
-                                    <h4 class="m-b-0"> </h4>
-                                    <p>Weight</p>
-                                    <h4 class="m-b-0"></h4>
-                                    <p>Ideal Weight </p>
-                                </div>
-                                <div class="chart-wrapper p-x-1">
-                               
-                                    <!-- <canvas id="card-chart1" class="chart" height="70"></canvas> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                <div class="animated fadeIn">
-                    <div class="row row-equal">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-primary">
-                                <div class="card-block p-b-0">
-                                    <div class="btn-group pull-right">
-                                        
-                                    </div>
-
-                                    <h4 class="m-b-0"> </h4>
-                                    <p>Weight</p>
-                                    <h4 class="m-b-0"></h4>
-                                    <p>Ideal Weight </p>
-                                </div>
-                                <div class="chart-wrapper p-x-1">
-                               
-                                    <!-- <canvas id="card-chart1" class="chart" height="70"></canvas> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                <div class="animated fadeIn">
-                    <div class="row row-equal">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card card-inverse card-primary">
-                                <div class="card-block p-b-0">
-                                    <div class="btn-group pull-right">
-                                        
-                                    </div>
-
-                                    <h4 class="m-b-0">   </h4>
-                                    <p>Weight</p>
-                                    <h4 class="m-b-0"></h4>
-                                    <p>Ideal Weight </p>
-                                </div>
-                                <div class="chart-wrapper p-x-1">
-                               
+          
                                     <!-- <canvas id="card-chart1" class="chart" height="70"></canvas> -->
                                 </div>
                             </div>
@@ -832,12 +753,7 @@
             </div>
         </aside>
         <footer class="footer">
-            <span class="text-left">
-                <a href="http://bootstrapmaster.com">Root</a> &copy; 2016 creativeLabs.
-            </span>
-            <span class="pull-right">
-                Powered by <a href="http://genesisui.com">GenesisUI</a>
-            </span>
+            
         </footer>
         <!-- Bootstrap and necessary plugins -->
         <script src="/js/libs/jquery.min.js"></script>

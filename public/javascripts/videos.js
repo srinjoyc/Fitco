@@ -2,7 +2,6 @@
 $( document ).ready(function(){
   // Initialize an OpenTok Session object
   var session = TB.initSession(sessionId);
-  var drake = dragula();
   var resize_counter = 0;
   var subscriber;
 

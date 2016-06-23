@@ -12,13 +12,8 @@ class AppointmentsController < ApplicationController
   # GET /appointments/1
   # GET /appointments/1.json
   def show
-    @appt = {id:5}  # bullshit dummy code, to get around lack of suitable AR/DB class
-    @video_session = @@sessions[@appt[:id]]     # violates REST (real REST and rails REST)
-    if !@video_session
-      @video_session = @@sessions[@appt[:id]] = VideoSession.new()
-    end
-
-    render :index ## temporary foolishness
+    @user_appointments = Appointment.where('user_id = 1', params[:id])
+    render json: @user_appointments
   end
 
   # GET /appointments/new
@@ -37,9 +32,12 @@ class AppointmentsController < ApplicationController
     day = DateTime.now.day
     month = DateTime.now.month
     year = DateTime.now.year
+    video_url = "/videos/#{params['user_id'].to_i*12}"
     @appointment = Appointment.new(user_id: params['user_id'].to_i, 
                                    trainer_id: params['trainer_id'].to_i, 
-                                   time: DateTime.new(year,month,day,hour))
+                                   time: DateTime.new(year,month,day,hour),
+                                   video_url: video_url)
+
     respond_to do |format|
       if @appointment.save
         format.html { redirect_to @appointment, notice: 'Appointment was successfully created.' }
