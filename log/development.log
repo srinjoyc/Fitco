@@ -14039,3 +14039,955 @@ Started GET "/weights" for 127.0.0.1 at 2016-06-23 04:03:15 -0700
 Processing by WeightsController#index as JSON
   [1m[36mWeight Load (0.2ms)[0m  [1mSELECT "weights".* FROM "weights"[0m
 Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-06-23 04:29:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered users/_subuserform.erb (7.0ms)
+  Rendered users/show.html.erb within layouts/application (157.7ms)
+  Rendered layouts/_footer.html (0.6ms)
+Completed 200 OK in 234ms (Views: 191.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.self-1d79d5025910879d7ff05f775d8fe93087b716a3e872d5c3b9ef42f1846f4eac.css?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/trainers.self-c06a5b202c3f5bc1e7030df823b99c1129644a69cb9a5635a4e373c4f391a0fa.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/application.self-c4b5bc2ccc2c363deb25c8739aedec8a57b741dea27fad14dd4825801480ad6b.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/appointments.self-e3c7375a1d84378182a153d2f4670ffb261611e462fcfefef2b5b2855f273461.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/exercises.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/hrates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/weights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/trainers.self-8a11d2ce337458709c24d9d3e89908255fc3ac8029522f70c59246d74ec661bc.css?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/user.self-9cfda468b52343ec8a168c83c0faf33eb332b77fa3952e6343f6df2cd9b4c0e1.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/assets/videos.self-0ec017aeea09ea59d6406b4f9b0443fe90de5d3017b702df99cb398519e0b332.js?body=1" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+
+
+Started GET "/weights" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+Processing by WeightsController#index as JSON
+  [1m[36mWeight Load (0.5ms)[0m  [1mSELECT "weights".* FROM "weights"[0m
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/hrates" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+Processing by HratesController#index as JSON
+  [1m[35mHrate Load (0.4ms)[0m  SELECT "hrates".* FROM "hrates"
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/weights" for 127.0.0.1 at 2016-06-23 04:29:45 -0700
+Processing by WeightsController#index as JSON
+  [1m[36mWeight Load (0.2ms)[0m  [1mSELECT "weights".* FROM "weights"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:02:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrainer Load (0.5ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html (0.6ms)
+Completed 200 OK in 275ms (Views: 238.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:02:53 -0700
+Processing by TrainersController#index as HTML
+  Rendered trainers/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_footer.html (0.2ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:04:44 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrainer Load (0.5ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_footer.html (0.2ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trainers/2" for 127.0.0.1 at 2016-06-23 10:04:48 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTrainer Load (0.5ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered trainers/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_footer.html (0.2ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:04:53 -0700
+Processing by TrainersController#index as HTML
+  Rendered trainers/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_footer.html (0.3ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trainer/1" for 127.0.0.1 at 2016-06-23 10:05:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/trainer/1"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.5ms)
+
+
+Started GET "/trainer/1" for 127.0.0.1 at 2016-06-23 10:08:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/trainer/1"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.0ms)
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:08:23 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrainer Load (0.6ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (167.1ms)
+  Rendered layouts/_footer.html (0.7ms)
+Completed 200 OK in 234ms (Views: 201.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:13:36 -0700
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.3ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (28.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007fa82949f038>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb__3890422127559376258_70180123591300'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__3890422127559376258_70180123591300'
+  app/controllers/trainers_controller.rb:9:in `index'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:13:36 -0700
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.4ms)[0m  [1mSELECT "trainers".* FROM "trainers"[0m
+  Rendered trainers/index.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x00000003ce1938>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb__3890422127559376258_70180123591300'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__3890422127559376258_70180123591300'
+  app/controllers/trainers_controller.rb:9:in `index'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.8ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:14:25 -0700
+
+SyntaxError (/home/srinjoyc/Desktop/Fitco/app/controllers/trainers_controller.rb:90: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/trainers_controller.rb:90: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.7ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:14:39 -0700
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.3ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007fa8297133f0>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb__3890422127559376258_70180123591300'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__3890422127559376258_70180123591300'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.0ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:14:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.5ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (233.2ms)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f3a3e5bd978>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb___1545814095565829618_14180880'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb___1545814095565829618_14180880'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.8ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:17:00 -0700
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.3ms)[0m  [1mSELECT "trainers".* FROM "trainers"[0m
+  Rendered trainers/index.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f3a3dda0bc8>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb___1545814095565829618_69944066363460'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb___1545814095565829618_69944066363460'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.7ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:17:07 -0700
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.6ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (27.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f3a3e9ad510>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb___1545814095565829618_69944066926580'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb___1545814095565829618_69944066926580'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.2ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:17:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.8ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (239.7ms)
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 4.5ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f29265ab288>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb__2687016435459033490_18132900'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__2687016435459033490_18132900'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (59.8ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:17:20 -0700
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.3ms)[0m  [1mSELECT "trainers".* FROM "trainers"[0m
+  Rendered trainers/index.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f2925f5bc48>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="trainer/id"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb__2687016435459033490_18132900'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__2687016435459033490_18132900'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.9ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:17:59 -0700
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.3ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f292670a110>):
+    54:           <div class="hovereffect">
+    55:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/9806/pexels-photo-large.jpg">
+    56:               <div class="overlay">
+    57:                   <h2 a href="#"><%= trainer.full_name %> : <%= trainer.description %></h2>
+    58:                   <% link_to trainers_path%>
+    59:               </div>
+    60:           </div>
+  app/views/trainers/index.html.erb:57:in `block in _app_views_trainers_index_html_erb__2687016435459033490_69907358950620'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__2687016435459033490_69907358950620'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.5ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:18:12 -0700
+Processing by TrainersController#index as HTML
+  [1m[36mTrainer Load (0.4ms)[0m  [1mSELECT "trainers".* FROM "trainers"[0m
+  Rendered trainers/index.html.erb within layouts/application (27.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f2927359880>):
+    64:           <div class="hovereffect">
+    65:             <img class="img-responsive" src="<%=trainer.url%>" alt="https://static.pexels.com/photos/4077/healthy-person-woman-sport-large.jpg">
+    66:               <div class="overlay">
+    67:                   <h2><%= trainer.full_name %> : <%= trainer.description %></h2>
+    68:                   <p> 
+    69:                   <a href="#"></a>
+    70:                   </p> 
+  app/views/trainers/index.html.erb:67:in `block in _app_views_trainers_index_html_erb__2687016435459033490_69907363537880'
+  app/views/trainers/index.html.erb:50:in `_app_views_trainers_index_html_erb__2687016435459033490_69907363537880'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.5ms)
+
+
+Started GET "/trainers" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+Processing by TrainersController#index as HTML
+  [1m[35mTrainer Load (0.5ms)[0m  SELECT "trainers".* FROM "trainers"
+  Rendered trainers/index.html.erb within layouts/application (33.7ms)
+  Rendered layouts/_footer.html (0.6ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-1d79d5025910879d7ff05f775d8fe93087b716a3e872d5c3b9ef42f1846f4eac.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/dragula.self-1184a6892cf675a017e57abe9bc9711857fea960015207423d4bd4e57d2fa48e.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/trainers.self-c06a5b202c3f5bc1e7030df823b99c1129644a69cb9a5635a4e373c4f391a0fa.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/application.self-c4b5bc2ccc2c363deb25c8739aedec8a57b741dea27fad14dd4825801480ad6b.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/hrates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/appointments.self-e3c7375a1d84378182a153d2f4670ffb261611e462fcfefef2b5b2855f273461.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/scaffolds.self-bf75a1ea14f9a933bb350d72b7d01fbe5aedb993cd9490204124a6fee8880415.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/userdash.self-11b8a4ec8b93fc27a288e5fb2f7f46e584d5e8de451c04f178e38acd35b240df.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/trainers.self-8a11d2ce337458709c24d9d3e89908255fc3ac8029522f70c59246d74ec661bc.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/users.self-9ff61fb0e0fdbf957234c84b4b3fc12ad8d753da5bd9449f9ae049a9042277ab.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/videos.self-8bb3adc4e2a717890d197fac33ed7e5e5c856e084cecfdeb8a58c036203a6644.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/weights.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/home.self-978a8ae27ba1cad1ede5a977b7763d87b3aca58105ba632b4d0001d2c59e296c.css?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/exercises.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:22 -0700
+
+
+Started GET "/assets/hrates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/assets/user.self-9cfda468b52343ec8a168c83c0faf33eb332b77fa3952e6343f6df2cd9b4c0e1.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/assets/videos.self-0ec017aeea09ea59d6406b4f9b0443fe90de5d3017b702df99cb398519e0b332.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/assets/weights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:18:23 -0700
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:18:39 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrainer Load (0.3ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_footer.html (0.2ms)
+Completed 200 OK in 39ms (Views: 30.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:21:58 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrainer Load (0.6ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `full_name' for #<Trainer:0x007f292790d948>):
+    116:             <div class="sidebar-header">
+    117:                 <img src="<%= @trainer.url %>" class="img-avatar" alt="Avatar">
+    118:                 <div>
+    119:                     <strong><%= @trainer.full_name %></strong>
+    120:                 </div>
+    121:                 <div class="text-muted">
+    122:                     <small><%= @trainer.description %></small>
+  app/views/trainers/show.html.erb:119:in `_app_views_trainers_show_html_erb__1791901029836267952_69907367163700'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.7ms)
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:22:21 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrainer Load (0.5ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_footer.html (0.3ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-1d79d5025910879d7ff05f775d8fe93087b716a3e872d5c3b9ef42f1846f4eac.css?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/trainers.self-c06a5b202c3f5bc1e7030df823b99c1129644a69cb9a5635a4e373c4f391a0fa.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/application.self-c4b5bc2ccc2c363deb25c8739aedec8a57b741dea27fad14dd4825801480ad6b.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/appointments.self-e3c7375a1d84378182a153d2f4670ffb261611e462fcfefef2b5b2855f273461.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/trainers.self-8a11d2ce337458709c24d9d3e89908255fc3ac8029522f70c59246d74ec661bc.css?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/exercises.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/hrates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/user.self-9cfda468b52343ec8a168c83c0faf33eb332b77fa3952e6343f6df2cd9b4c0e1.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/videos.self-0ec017aeea09ea59d6406b4f9b0443fe90de5d3017b702df99cb398519e0b332.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/weights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:22:22 -0700
+
+
+Started GET "/assets/style.css.map" for 127.0.0.1 at 2016-06-23 10:23:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/style.css.map"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.3ms)
+
+
+Started GET "/trainers/1" for 127.0.0.1 at 2016-06-23 10:24:24 -0700
+Processing by TrainersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrainer Load (0.5ms)[0m  [1mSELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "trainers".* FROM "trainers" WHERE "trainers"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered trainers/show.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_footer.html (0.1ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-1d79d5025910879d7ff05f775d8fe93087b716a3e872d5c3b9ef42f1846f4eac.css?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/dragula.self-1d0d404d17fe265891acfc200fc7537f640bae463fa6fc543dd450bdae5b65d7.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/facebook.self-4fffd5601edc843077cf4c22a5228eb3bfa5d43681ff1e43acf4b700e472a80a.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/trainers.self-8a11d2ce337458709c24d9d3e89908255fc3ac8029522f70c59246d74ec661bc.css?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/trainers.self-c06a5b202c3f5bc1e7030df823b99c1129644a69cb9a5635a4e373c4f391a0fa.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/application.self-c4b5bc2ccc2c363deb25c8739aedec8a57b741dea27fad14dd4825801480ad6b.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/appointments.self-e3c7375a1d84378182a153d2f4670ffb261611e462fcfefef2b5b2855f273461.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/exercises.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/hrates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/schedules.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/user.self-9cfda468b52343ec8a168c83c0faf33eb332b77fa3952e6343f6df2cd9b4c0e1.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/videos.self-0ec017aeea09ea59d6406b4f9b0443fe90de5d3017b702df99cb398519e0b332.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/assets/weights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+
+
+Started GET "/weights" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+Processing by WeightsController#index as JSON
+  [1m[36mWeight Load (0.4ms)[0m  [1mSELECT "weights".* FROM "weights"[0m
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/hrates" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+Processing by HratesController#index as JSON
+  [1m[35mHrate Load (3.1ms)[0m  SELECT "hrates".* FROM "hrates"
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/weights" for 127.0.0.1 at 2016-06-23 10:24:25 -0700
+Processing by WeightsController#index as JSON
+  [1m[36mWeight Load (0.4ms)[0m  [1mSELECT "weights".* FROM "weights"[0m
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.css.map" for 127.0.0.1 at 2016-06-23 10:24:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/style.css.map"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.3ms)

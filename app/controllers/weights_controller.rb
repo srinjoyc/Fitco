@@ -10,6 +10,8 @@ class WeightsController < ApplicationController
   # GET /weights/1
   # GET /weights/1.json
   def show
+    @weights = Weight.find(params[:id])
+    render json: @weights
   end
 
   # GET /weights/new
